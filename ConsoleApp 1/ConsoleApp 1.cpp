@@ -1,9 +1,12 @@
-// ConsoleApp 1.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
+//Says "Hello world"
+#include <stdio.h>
+#include <conio.h>
 #include <iostream>
-
 int main()
 {
-    std::cout << "Hello World!\n";
+    printf("Hello World!\n");
+    printf("I'm made by you!\n");
+    printf("I must go now\n");
+    printf("goodbye");
+    return 0;
 }
