@@ -9,8 +9,9 @@ using namespace std;
 int main()
 {
     printf("Hello world!\n");
-    Int a = 0;
-    const float g = 6.62607004
+    const float c = 3.0e8;
+    const float g = 9.8:
+    int 
 
 }
 
