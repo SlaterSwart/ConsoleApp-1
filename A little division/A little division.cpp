@@ -13,39 +13,30 @@
 // some comment
 #include <conio.h>
 #include <stdio.h>
+#include <iostream>
 
 int main()
 {
-	printf(“Division problems.\n\n”);	// output message to the screen
+	printf("division problems.\n\n");
 	int a = 3;
 	int b = 4;
 	int c;
+
 	float x = 3.3;
 	float y = 4.4;
 	float z;
 
 	c = a / b;
-	printf(“a / b = % d\n”, c);	// int division
+	printf("a / b = %d\n", c);  //int division 
+
 	z = x / y;
-	printf(“x / y = % f\n”, z);	// float division
-	c = x / y;
-	printf(“x / y = % d\n”, c);	// float division into int variable
-	z = a / b;
-	printf(“a / b = % f\n”, z);	// int division into float variable
-	c = a / y;
-	printf(“a / y = % d\n”, c);	// mixed division into int variable
-	z = x / b;
-	printf(“x / b = % f\n”, z);	// mixed division into float variable
-	c = a / (int)y;
-	printf(“a / y = % d\n”, c);	// int division into int variable
-	z = x / (float)b;
-	printf(“x / b = % f\n”, z);	// float division into float variable
+	printf("X / Y = %f\n", z);
 
-	c = a / b;
-	printf(“a / b = % d\n”, c);	// int division
-	int d = a % b;
-	printf(“a % %b = % d\n”, d);	// modulus (remainder)
+	z = a / b; 
+	printf("a / b = %f\n", z);
 
-	printf(“Press the any key to continue.\n”);
-	//_getch();	// Uncomment this line if your code runs but does not stay on the screen when finished.
-	return 0;
+
+
+
+
+}
