@@ -35,6 +35,9 @@ int main()
 	z = a / b; 
 	printf("a / b = %f\n", z);
 
+	c = a + b;
+	printf("a + b = %d\n", c); //test for math
+
 
 
 

@@ -2,19 +2,52 @@
 //
 
 #include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <conio.h>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	int i = 0;
+
+	while (i = 0)
+	{
+		int secMax = 12;
+		int minimum = 1;
+		int maximum = 6;
+
+		int SixSidedDie;
+		int _12sidedDice;
+
+		float FloatMaximum = 5.0;
+		float FloatMinimum = 0.0;
+		float FloatRun;
+
+		char characters;
+		srand(0);
+		srand((unsigned)time(NULL));
+
+		SixSidedDie = (minimum)+rand() % (maximum - minimum + 1); // random 6 sided dice
+		printf("6 sided dice:%d\n", SixSidedDie);
+
+		_12sidedDice = (minimum)+rand() % (secMax - minimum + 1); //random 12 sided dice
+		printf("12 sided dice:%d\n", _12sidedDice);
+
+		FloatRun = FloatMinimum + (float)(rand()) / ((float)(RAND_MAX) / (FloatMaximum - FloatMinimum)); //for the random floats
+		printf("Random floats:%f\n", FloatRun);
+
+		characters = 'a' + rand() % 26 - 32; //a random char
+		/*
+		What this code above this does is make a random number between 1-26 then converts it to letters in binnary
+		then it will make it upper case using -32
+		*/
+		printf("Random character:%c\n", characters);
+
+		_getch();
+		system("CLS");
+	}
+	return 0;
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
