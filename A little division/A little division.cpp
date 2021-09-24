@@ -25,18 +25,34 @@ int main()
 	float x = 3.3;
 	float y = 4.4;
 	float z;
+	float g = 6.9;
+	float u = 3.7826;
+	floa
 
+	bool j = 1;
+	bool k = 1;
+	bool o;
+
+	
+	//Int stuff
 	c = a / b;
 	printf("a / b = %d\n", c);  //int division 
 
+	c = a + b;
+	printf("a + b = %d\n", c); //test for math
+
+	o = j / k;
+	printf("j / k = %d\n", o);
+
+	//float division 
 	z = x / y;
 	printf("X / Y = %f\n", z);
 
-	z = a / b; 
+	z = a / b;
 	printf("a / b = %f\n", z);
 
-	c = a + b;
-	printf("a + b = %d\n", c); //test for math
+
+
 
 
 
