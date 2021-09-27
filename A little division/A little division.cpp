@@ -49,6 +49,9 @@ int main()
 	c = d / b;
 	printf("d / b = %d\n", c); //int division 
 
+	c = d - u;
+	printf("d - u = %d\n", c);
+
 	_getch();
 	system("CLS");
 
