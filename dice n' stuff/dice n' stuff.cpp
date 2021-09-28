@@ -6,13 +6,14 @@
 #include <stdlib.h>
 #include <time.h>
 #include <conio.h>
+#include <string>
 using namespace std;
 
 int main()
 {
 	int i = 0;
 
-	while (i = 0)
+	while (1 < 10)
 	{
 		int secMax = 12;
 		int minimum = 1;
@@ -24,6 +25,8 @@ int main()
 		float FloatMaximum = 5.0;
 		float FloatMinimum = 0.0;
 		float FloatRun;
+
+		string input;
 
 		char characters;
 		srand(0);
@@ -45,8 +48,25 @@ int main()
 		*/
 		printf("Random character:%c\n", characters);
 
-		_getch();
-		system("CLS");
+		printf("Press 1 to repeat, 2 to exit\n");
+
+		cin >> input;
+
+		if (input == "1")
+		{
+			system("CLS");
+			continue;
+		}
+		else if (input == "2")
+		{
+			break;
+		}	
+		else
+		{
+			printf("Incorect input detected, exiting program");
+			break;
+		}
+		
 	}
 	return 0;
 }
