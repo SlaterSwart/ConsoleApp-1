@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Loops tests", "Loops tests\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Random numbers n'stuff", "Random numbers n'stuff\Random numbers n'stuff.vcxproj", "{7E713AD1-5DEF-4597-A042-028BC296511B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bus Charter", "Bus Charter\Bus Charter.vcxproj", "{01F2D997-25B1-4242-A9CC-C6617AAEDFF9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{7E713AD1-5DEF-4597-A042-028BC296511B}.Release|x64.Build.0 = Release|x64
 		{7E713AD1-5DEF-4597-A042-028BC296511B}.Release|x86.ActiveCfg = Release|Win32
 		{7E713AD1-5DEF-4597-A042-028BC296511B}.Release|x86.Build.0 = Release|Win32
+		{01F2D997-25B1-4242-A9CC-C6617AAEDFF9}.Debug|x64.ActiveCfg = Debug|x64
+		{01F2D997-25B1-4242-A9CC-C6617AAEDFF9}.Debug|x64.Build.0 = Debug|x64
+		{01F2D997-25B1-4242-A9CC-C6617AAEDFF9}.Debug|x86.ActiveCfg = Debug|Win32
+		{01F2D997-25B1-4242-A9CC-C6617AAEDFF9}.Debug|x86.Build.0 = Debug|Win32
+		{01F2D997-25B1-4242-A9CC-C6617AAEDFF9}.Release|x64.ActiveCfg = Release|x64
+		{01F2D997-25B1-4242-A9CC-C6617AAEDFF9}.Release|x64.Build.0 = Release|x64
+		{01F2D997-25B1-4242-A9CC-C6617AAEDFF9}.Release|x86.ActiveCfg = Release|Win32
+		{01F2D997-25B1-4242-A9CC-C6617AAEDFF9}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
