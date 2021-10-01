@@ -18,7 +18,10 @@ int main()
 
 	printf("What is your name?");
 	cin >> name;
-	printf("Hi ")
+	printf("Hi %d\n", name);
+
+	_getch();
+	system("CLS");
 	
 	while (1 < 10)
 	{
@@ -27,18 +30,18 @@ int main()
 		system("CLS");
 
 		printf("is this how many people you have on the tour?: %d\n", peopleOnTheBus);
-		printf("press 1 to go back press 2 continue\n");
+		printf("press 1 to continue press 2 to go back\n");
 
 		cin >> input;
 
 		if (input == "1")
 		{
-			continue;
+			break;
 			system("CLS");
 		}
 		else if (input == "2")
 		{
-			break;
+			continue;
 		}
 		else
 		{
@@ -51,13 +54,15 @@ int main()
 
 	}
 
-	van = peopleOnTheBus / 60;
-	printf("People On The tour / 60 = how many buses you need: %d\n", van);
+	bus = peopleOnTheBus / 60;
+	printf("People On The tour / 60 = how many buses you need: %d\n", bus);
 	van = peopleOnTheBus % 60;
 	printf("The people that need to be in a van: %d\n", van);
 
 	_getch();
 
+
+	
 
 
 
