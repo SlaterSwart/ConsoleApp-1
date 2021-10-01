@@ -35,5 +35,5 @@ int main()
 
 	floatr = floatrMin + (float)(rand()) / 
 	
-
+	
 }
