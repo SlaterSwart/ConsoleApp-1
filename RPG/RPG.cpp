@@ -16,9 +16,15 @@
 #include <conio.h>
 #include <math.h>
 #include <regex>
+#include <chrono>
+#include <thread>
+
 using namespace std;
 int main()
 {
+	using namespace std::this_thread;     // sleep_for, sleep_until
+	using namespace std::chrono_literals; // ns, us, ms, s, h, etc.
+	using std::chrono::system_clock;
 	//intro
 	string dot1 = "   ";
 	string dot2 = ".  ";
@@ -43,6 +49,7 @@ int main()
 	float PlayerDamage; //This will change depending on items and skill sets
 	float NPCHealth = 1000;
 	string PlayerName;
+	string input;
 
 	//enemy attacks damage:
 	//pen
@@ -66,26 +73,43 @@ int main()
 	cin >> PlayerName;
 	system("CLS");
 
-	cout << "Hello" << PlayerName << endl;
-	printf("Are you Ready to start the game?"); 
-	while (1 < 2)
+	cout << "Hello " << PlayerName << endl;
+	printf("Are you Ready to start the game?\n"); 
+	int i = 1;
+	while (i < 3, i++)
 	{
 		cout << dot1 << endl;
 		dot1.replace(dot1.find("   "), 2, dot2);
-		cout << dot2 << endl;
+		sleep_for(10ns);
 		dot2.replace(dot2.find(".  "), 2, dot3);
-		cout << dot3 << endl;
+		sleep_for(10ns);
 		dot3.replace(dot3.find(".. "), 2, dot4);
-		cout << dot4 << endl;
+		sleep_for(10ns);
 		dot4.replace(dot4.find("..."), 2, dot5);
-		cout << dot5 << endl;
+		sleep_for(10ns);
 		dot5.replace(dot5.find(" .."), 2, dot6);
-		cout << dot6 << endl;
+		sleep_for(10ns);
 		dot6.replace(dot6.find("  ."), 2, dot1);
+		sleep_for(10ns);
 
-		return EXIT_SUCCESS;
 	}
-
+	
+	cin >> input;
+	if (input == "yes")
+	{
+		system("CLS");
+		printf("Okay!\n");
+		_getch();
+		system("CLS");
+	}
+	else if (input == "no")
+	{
+		printf("Closing program...");
+		sleep_for(10ns);
+		sleep_until(system_clock::now() + 1s);//closes the program after waiting ~1 second
+		return 0;
+	}
+	
 
 
 	_getch();

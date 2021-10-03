@@ -38,7 +38,7 @@ int main()
 	cin >> name;
 	system("CLS");
 
-	printf("Hi, %s!\n", name.c_str());
+	printf("Hi, %s!\n", name.c_str());//how to printf a string
 	_getch();
 
 	printf("I'm here to here to try to fine out how fast you were going and how many gallons per mile you use on your trip!\n");
