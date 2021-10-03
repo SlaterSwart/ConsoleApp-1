@@ -14,6 +14,7 @@
 #include <conio.h>
 #include <stdio.h>
 #include <iostream>
+using namespace std;
 
 int main()
 {
@@ -94,6 +95,11 @@ int main()
 
 	z = g * s;
 	printf("g * b = %f\n", z);
+
+	c = d % a;
+	printf("g %% y = %f\n", c);
+
+	cout << "g / y = " << z << endl; // cout test
 
 	printf("press any bottom to continuesjkasdhg\n");
 
