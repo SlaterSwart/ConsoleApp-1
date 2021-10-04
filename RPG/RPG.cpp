@@ -76,24 +76,24 @@ int main()
 	cout << "Hello " << PlayerName << endl;
 	printf("Are you Ready to start the game?\n"); 
 	int i = 1;
+	/*cout << dot1 << endl;
 	while (i < 3, i++)
 	{
-		cout << dot1 << endl;
-		dot1.replace(dot1.find("   "), 2, dot2);
+		dot1.replace(dot1.find("   "), 1, dot2);
 		sleep_for(10ns);
-		dot2.replace(dot2.find(".  "), 2, dot3);
+		dot2.replace(dot2.find(".  "), 1, dot3);
 		sleep_for(10ns);
-		dot3.replace(dot3.find(".. "), 2, dot4);
+		dot3.replace(dot3.find(".. "), 1, dot4);
 		sleep_for(10ns);
-		dot4.replace(dot4.find("..."), 2, dot5);
+		dot4.replace(dot4.find("..."), 1, dot5);
 		sleep_for(10ns);
-		dot5.replace(dot5.find(" .."), 2, dot6);
+		dot5.replace(dot5.find(" .."), 1, dot6);
 		sleep_for(10ns);
-		dot6.replace(dot6.find("  ."), 2, dot1);
+		dot6.replace(dot6.find("  ."), 1, dot1);
 		sleep_for(10ns);
 
 	}
-	
+	*/
 	cin >> input;
 	if (input == "yes")
 	{
@@ -110,7 +110,7 @@ int main()
 		return 0;
 	}
 	
-
+	//story starts here
 
 	_getch();
 	return 0;					
