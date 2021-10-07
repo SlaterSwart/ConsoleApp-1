@@ -29,6 +29,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Computer programing quiz", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Choose your own adventuresss", "Choose your own adventuresss\Choose your own adventuresss.vcxproj", "{FA22DF4E-3E6E-4762-9A78-FDE9A7C6AA6C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AscII art test", "AscII art test\AscII art test.vcxproj", "{261F99C7-C0A9-448B-826D-2651A4900D96}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -141,6 +143,14 @@ Global
 		{FA22DF4E-3E6E-4762-9A78-FDE9A7C6AA6C}.Release|x64.Build.0 = Release|x64
 		{FA22DF4E-3E6E-4762-9A78-FDE9A7C6AA6C}.Release|x86.ActiveCfg = Release|Win32
 		{FA22DF4E-3E6E-4762-9A78-FDE9A7C6AA6C}.Release|x86.Build.0 = Release|Win32
+		{261F99C7-C0A9-448B-826D-2651A4900D96}.Debug|x64.ActiveCfg = Debug|x64
+		{261F99C7-C0A9-448B-826D-2651A4900D96}.Debug|x64.Build.0 = Debug|x64
+		{261F99C7-C0A9-448B-826D-2651A4900D96}.Debug|x86.ActiveCfg = Debug|Win32
+		{261F99C7-C0A9-448B-826D-2651A4900D96}.Debug|x86.Build.0 = Debug|Win32
+		{261F99C7-C0A9-448B-826D-2651A4900D96}.Release|x64.ActiveCfg = Release|x64
+		{261F99C7-C0A9-448B-826D-2651A4900D96}.Release|x64.Build.0 = Release|x64
+		{261F99C7-C0A9-448B-826D-2651A4900D96}.Release|x86.ActiveCfg = Release|Win32
+		{261F99C7-C0A9-448B-826D-2651A4900D96}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
