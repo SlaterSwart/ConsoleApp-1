@@ -28,7 +28,8 @@ int main()
 	_getch();
 	system("CLS");
 
-	printf("You come out of a haze, not knowing what you just did.\n as you look around you start to come back into things.")
+	printf("You come out of a haze, not knowing what you just did.\n as you look around you start to come back into things.");
+	
 
 
 
