@@ -33,6 +33,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AscII art test", "AscII art
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "merge test", "merge test\merge test.vcxproj", "{CF8CB6F8-213D-4B05-B534-60DA5166416E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Maze", "Maze\Maze.vcxproj", "{16D24358-5019-4610-B511-9FD2DD8730B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -161,6 +163,14 @@ Global
 		{CF8CB6F8-213D-4B05-B534-60DA5166416E}.Release|x64.Build.0 = Release|x64
 		{CF8CB6F8-213D-4B05-B534-60DA5166416E}.Release|x86.ActiveCfg = Release|Win32
 		{CF8CB6F8-213D-4B05-B534-60DA5166416E}.Release|x86.Build.0 = Release|Win32
+		{16D24358-5019-4610-B511-9FD2DD8730B4}.Debug|x64.ActiveCfg = Debug|x64
+		{16D24358-5019-4610-B511-9FD2DD8730B4}.Debug|x64.Build.0 = Debug|x64
+		{16D24358-5019-4610-B511-9FD2DD8730B4}.Debug|x86.ActiveCfg = Debug|Win32
+		{16D24358-5019-4610-B511-9FD2DD8730B4}.Debug|x86.Build.0 = Debug|Win32
+		{16D24358-5019-4610-B511-9FD2DD8730B4}.Release|x64.ActiveCfg = Release|x64
+		{16D24358-5019-4610-B511-9FD2DD8730B4}.Release|x64.Build.0 = Release|x64
+		{16D24358-5019-4610-B511-9FD2DD8730B4}.Release|x86.ActiveCfg = Release|Win32
+		{16D24358-5019-4610-B511-9FD2DD8730B4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
