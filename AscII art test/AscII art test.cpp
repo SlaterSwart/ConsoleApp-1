@@ -1,5 +1,18 @@
-// AscII art test.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+/*
+	Name:  Slater Swart
+	Problem: display art 
+	Pseudocode:
+	lets the user choose art after letting them put a name in
+	prints the art
+	coin flip thing 
+	dice thing 
+	done
+	Notes: N/A
+	Maintenance log:
+		Date:10/10		Done:10/14
+		10/2: 1 started the program and used the Bus Charter(my last project) to help me as a reference.
+*/
+
 
 #include <iostream>
 #include <conio.h>
