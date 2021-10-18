@@ -38,7 +38,7 @@ int main()
 		_12sidedDice = (minimum)+rand() % (secMax - minimum + 1); //random 12 sided dice
 		printf("12 sided dice:%d\n", _12sidedDice);
 
-		FloatRun = FloatMinimum + (float)(rand()) / ((float)(RAND_MAX) / (FloatMaximum - FloatMinimum)); //for the random floats
+		FloatRun = FloatMinimum + (float)(rand()) / ((float)(RAND_MAX) / (FloatMaximum - FloatMinimum )); //for the random floats
 		printf("Random floats:%f\n", FloatRun);
 
 		characters = 'a' + rand() % 26 - 32; //a random char
