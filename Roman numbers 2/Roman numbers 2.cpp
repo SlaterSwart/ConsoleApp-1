@@ -9,12 +9,20 @@ using namespace std;
 
 int main()
 {
-	int M = 1000;
-	int CM = 900;
-	int 
+	string input;
+	string yesno;
+	int thousands;
+	int hundreds;
+	int tens;
+	int ones;
 
-
-
+	printf("Enter the number you want to process to roman numerals\n");
+	cin >> input;
+	printf("%s\n");
+	_getch();
+	system("CLS");
+	
+	(input/100)
 
 }
 
