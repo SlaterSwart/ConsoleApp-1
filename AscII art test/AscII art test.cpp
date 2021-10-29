@@ -1,6 +1,6 @@
 /*
 	Name:  Slater Swart
-	partner:Olin Blycker
+	partner:Brookes sammorco0or 
 	Problem: display art 
 	Pseudocode:
 	lets the user choose art after letting them put a name in

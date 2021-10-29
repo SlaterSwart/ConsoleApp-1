@@ -11,12 +11,32 @@ int main()
 {
 	string name;
 	string userText;
+	int spaces = 0;
+	int newline = 0;
+	int tabs = 0;
+	int numbers = 0;
 
 	printf("Type the sentence that you would like analyzed\n");
-	cin > userText;
+	printf("press the tilde key(~) followed by enter to end your input.\n");
+	cin >> userText;
+	getline(cin, userText, '~');
 
 
+	printf("your string is %s characters long\n", userText.length());
 
+	for (int i = 0; i < userText.length(); i++)
+	{
+		if (userText[i] == ' ')
+		{
+			spaces++;
+		}
+		else if (userText[i] == '\t')
+		{
 
+		}
+	}
+	
+
+	return 0;
 }
 
