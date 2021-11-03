@@ -22,7 +22,8 @@ int main()
 	getline(cin, userText, '~');
 
 
-	printf("your string is %s characters long\n", userText.length());
+	printf(R"(your string is %s characters long
+)", userText.length());
 
 	for (int i = 0; i < userText.length(); i++)
 	{
@@ -32,11 +33,19 @@ int main()
 		}
 		else if (userText[i] == '\t')
 		{
-
+			tabs++;
+		}
+		else if (userText[i] == '\n')
+		{
+			newline++;
+		}
+		else if (userText[1] == '%i')
+		{
+			numbers++;
 		}
 	}
 	
-
+	printf("your string has %d spaces, %d tabs, %d new lines, and %d numbers.\n", spaces, tabs, newline, numbers);
 	return 0;
 }
 
