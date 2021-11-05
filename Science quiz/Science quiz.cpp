@@ -1,5 +1,17 @@
-// Science quiz.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+/*
+Name:  Slater Swart
+	Project name: science quiz
+	Problem: make a quiz that will score it's self
+	Pseudocode:
+	name
+	input
+	questions
+	grades
+	give percent
+	Notes:
+	Maintenance log:
+		Date started:9/13/21		Done:9/13/21
+*/
 
 #include <iostream>
 #include <string>

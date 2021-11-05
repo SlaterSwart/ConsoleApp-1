@@ -1,4 +1,15 @@
+/*	Name:  Slater Swart
+	Project name: RPG
+	Problem:a nonlooping maze 
+	Pseudocode:
+	puts you in room one, then you must get out using 1 2 or 3 numbers
+	if you get stuck you can go back to the start or end the program
+	once you win you can end the program or go back to the start
+	Notes:
+	Maintenance log:
+		Date started:10/17/21	Done:
 
+*/
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>

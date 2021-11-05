@@ -12,7 +12,8 @@ using namespace std;
 
 int main()
 {
-	while (1 < 2)
+	bool loop = true;
+	while (loop)
 	{
 		int input;
 		int i = 0;
@@ -25,7 +26,7 @@ int main()
 		switch (artchoice)
 		{
 		case 1:
-			while (i < 10, i++)
+			while (i < 10)
 			{
 				system("CLS");
 				printf("           (                 ,&&&.	\n");
@@ -54,10 +55,12 @@ int main()
 				printf("     ( `.__ _  ___,')      <_,-'__,'\n");
 				printf("jrei  `'(_ )_)(_)_)')				\n");
 				Sleep(300);
+				i++;
+
 				if (i == 9)
 				{
 					system("CLS");
-					printf(" would you like to see it again?\n 1 for yes 2 for no");
+					printf(" would you like to see it again?\n 1 for yes 2 for no\n");
 					cin >> input;
 					if (input == 1)
 					{
@@ -74,7 +77,7 @@ int main()
 			}
 			break;
 		case 2:
-			while (1 < 10, i++)
+			while (1 < 10)
 			{
 				system("CLS");
 				printf("		                    `. ___							  \n");
@@ -110,10 +113,11 @@ int main()
 				printf("                                             SSt  `------'`	  \n");
 				printf("Zooom!!\n");
 				Sleep(300);
+				i++;
 				if (i == 9)
 				{
 					system("CLS");
-					printf(" would you like to see it again?\n 1 for yes 2 for no");
+					printf(" would you like to see it again?\n 1 for yes 2 for no\n");
 					cin >> input;
 					if (input == 1)
 					{
@@ -128,6 +132,7 @@ int main()
 
 				}
 			}
+			break;
 		case 3:
 			printf("		                                .''.			  \n");
 			printf("       .''.             *''*    :_\\/_:     . 			  \n");
@@ -145,7 +150,7 @@ int main()
 			Sleep(400);
 
 			system("CLS");
-			printf(" would you like to go back?\n 1 for yes 2 for no");
+			printf(" would you like to go back?\n 1 for yes 2 for no\n");
 			cin >> input;
 			if (input == 1)
 			{
@@ -160,6 +165,7 @@ int main()
 
 		case 4:
 			printf("thank you for playing\n");
+			loop = false;
 			break;
 		}
 		

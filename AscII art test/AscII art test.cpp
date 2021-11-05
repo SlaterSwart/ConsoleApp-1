@@ -1,6 +1,6 @@
 /*
 	Name:  Slater Swart
-	partner:Brookes sammorco0or 
+	partner:Olin Blycker 
 	Problem: display art 
 	Pseudocode:
 	lets the user choose art after letting them put a name in
@@ -11,7 +11,7 @@
 	Notes: N/A
 	Maintenance log:
 		Date:10/10		Done:10/14
-		10/2: 1 started the program and used the Bus Charter(my last project) to help me as a reference.
+		10/2: 1 started the program and used the Bus Charter(my last project) to help me as a reference. Olin helped me with some of the codeing and problem solving 
 */
 
 
