@@ -3,7 +3,7 @@ Name:  Slater Swart
 	Project name: Computer programing quiz
 	Problem: make a quiz that will score it's self
 	Pseudocode:
-
+--******-***+3*-*-.--*-*-*-*--*-*---*-
 
 
 	Notes:

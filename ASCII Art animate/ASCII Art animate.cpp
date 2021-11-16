@@ -147,7 +147,7 @@ int main()
 			printf("    |' | |.    |    ||       | |   |  |    ||      |	  \n");
 			printf(" ___|  '-'     '    ""       '-'   '-.'    '`      |____  \n");
 			printf("jgs~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  \n");
-			Sleep(400);
+			Sleep(1000);
 
 			system("CLS");
 			printf(" would you like to go back?\n 1 for yes 2 for no\n");
