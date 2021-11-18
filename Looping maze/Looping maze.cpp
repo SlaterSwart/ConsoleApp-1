@@ -32,10 +32,51 @@ int main()
 	printf("Lets get started!\n");
 	getch();
 	system("CLS");
-
-	while (1 < 2) { // Start
-		printf("you can go right or down 1 for right 2 for down\n");
-		cin
+	room1 = true;
+	while (room1 == true) { // Start
+		printf(" you are in room 1.you can go right or down 1 for right 2 for down\n");
+		cin >> input;
+		if (input == 1) {
+			room1 = false;
+			room2 = true;
+			break;
+		}
+		if (input == 2) {
+			room1 = false;
+			room4 = true;
+			break;
+		}
 	}
 
+	while (room2 == true) {
+		printf(" you are in room 2. you can go left, down and right.\n");
+	}
+
+	while (room3 == true) {
+		printf(" you are in room 3. you can go left.\n");
+	}
+
+	while (room4 == true) {
+		printf(" you are in room 4. you can go up, left and down.\n");
+	}
+
+	while (room5 == true) {
+		printf(" you are in room 5. you can go left, up and right.");
+	}
+
+	while (room6 == true) {
+		printf(" you are in room 6. you can go go left.\n");
+	}
+
+	while (room7 == true) {
+		printf(" you are in room 7. you can go up and left.\n");
+	}
+
+	while (room8 == true) {
+		printf(" you are in room 8. you can go left and right 
+	}
+
+	while (room9 == true) {
+		printf(" you are in room 9.
+	}
 }
