@@ -49,11 +49,32 @@ int main()
 	}
 
 	while (room2 == true) {
-		printf(" you are in room 2. you can go left, down and right. 1 for \n");
+		printf(" you are in room 2. you can go left, down, and right. 1 for left. 2 for down. 3 for right. \n");
+		cin >> input;
+		if (input == 1) {
+			room1 = true;
+			room2 = false;
+			break;
+		}
+		else if (input == 2) {
+			room5 = true;
+			room2 = false;
+			break;
+		}
+		else if (input == 3) {
+			room3 = true;
+			room2 = false;
+			break;
+		}
 	}
 
 	while (room3 == true) {
-		printf(" you are in room 3. you can go left.\n");
+		printf(" you are in room 3. you can go left. press 1 to go left\n");
+		cin >> input;
+		if (input == 1) {
+			room2 = true;
+			room3 = false;
+		}
 	}
 
 	while (room4 == true) {
@@ -79,4 +100,5 @@ int main()
 	while (room9 == true) {
 		printf(" you are in room 9. you have beat the game! would you like to got back? 1 for yes 2 for \n");
 	}
+	return 0;
 }

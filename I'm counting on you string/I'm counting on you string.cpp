@@ -39,7 +39,7 @@ int main()
 		{
 			newline++;
 		}
-		else if (userText[1] == '%i')
+		else if (userText[i] >= '0' || userText[i] <= '9')
 		{
 			numbers++;
 		}
