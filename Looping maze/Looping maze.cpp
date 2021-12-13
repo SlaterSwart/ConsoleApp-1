@@ -14,24 +14,24 @@ int main()
 	string name;
 	int input;
 	bool room1;
-	bool room2;
-	bool room3;
-	bool room4;
-	bool room5;
-	bool room6;
-	bool room7;
-	bool room8;
-	bool room9;
+	bool room2 = false;
+	bool room3 = false;
+	bool room4 = false;
+	bool room5 = false;
+	bool room6 = false;
+	bool room7 = false;
+	bool room8 = false;
+	bool room9 = false;
 	bool quit = false;
 	printf("what is your name?\n");
 	cin >> name;
 	printf("Hi %s!\n", name.c_str());
-	getch();
+	_getch();
 	system("CLS");
 	printf("you are in a maze that is a 3 by 3.\n");
 	printf("you must get out and this time the doors don't close behind you\n");
 	printf("Lets get started!\n");
-	getch();
+	_getch();
 	system("CLS");
 	room1 = true;
 	while (quit == false) {
@@ -105,7 +105,7 @@ int main()
 		}
 
 		while (room5 == true) {
-			printf(" you are in room 5. you can go left, up and right. 1 for left. 2 for up 3 for right.\n");
+			printf(" you are in room 5. you can go left, up and right. 1 for left. 2 for up 3 for right. bing bong\n");
 			cin >> input;
 			if (input == 1) {
 				room4 = true;
@@ -147,11 +147,16 @@ int main()
 
 		while (room8 == true) {
 			printf(" you are in room 8. you can go left and right.\n");
+			cin >> input;
+			if (input == 1) {
+				room7 = true;
+				room8 = false;
+			}
 		}
 
 		while (room9 == true) {
 			printf(" you are in room 9. you have beat the game! would you like to got back? 1 for yes 2 for \n");
 		}
-		return 0;
+		continue;
 	}
 }
