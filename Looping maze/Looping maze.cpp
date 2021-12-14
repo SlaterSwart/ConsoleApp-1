@@ -146,16 +146,26 @@ int main()
 		}
 
 		while (room8 == true) {
-			printf(" you are in room 8. you can go left and right.\n");
+			printf(" you are in room 8. you can go left and right. 1 for left. 2 for right\n");
 			cin >> input;
 			if (input == 1) {
 				room7 = true;
 				room8 = false;
 			}
+			else if (input == 2) {
+				room9 = true;
+				room8 = false;
+				break;
+			}
 		}
 
 		while (room9 == true) {
 			printf(" you are in room 9. you have beat the game! would you like to got back? 1 for yes 2 for \n");
+			cin >> input;
+			if (input == 1) {
+				room1 = true;
+				room9 = false;
+			}
 		}
 		continue;
 	}
