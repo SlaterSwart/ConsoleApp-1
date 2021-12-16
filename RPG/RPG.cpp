@@ -39,7 +39,6 @@ int main()
 	printf("trying to find your self a stapler so that you can get stapled.\n");
 	printf("you will face other office supplies in order to get across Mr. Miyoshi's room\n");
 	printf("If you make it to the end and get stapled you will be able to play the game again for more staples that might change some things the more you have.\n");
-	printf("Have fun, the whole game is one big office war!\n");
 
 	_getch();
 	system("CLS");

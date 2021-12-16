@@ -166,7 +166,11 @@ int main()
 				room1 = true;
 				room9 = false;
 			}
+			if (input == 2)
+				quit = true;
+				break;
 		}
 		continue;
 	}
+	return 0;
 }
