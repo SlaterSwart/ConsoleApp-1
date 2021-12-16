@@ -45,6 +45,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Fruit loop maze", "Fruit lo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Looping maze", "Looping maze\Looping maze.vcxproj", "{FF0CC1A6-C975-4174-BE70-E1D9CF0B7256}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Fortune cookie", "Fortune cookie\Fortune cookie.vcxproj", "{64B8E808-2322-4ACC-AF41-5C26D2B5D392}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -221,6 +223,14 @@ Global
 		{FF0CC1A6-C975-4174-BE70-E1D9CF0B7256}.Release|x64.Build.0 = Release|x64
 		{FF0CC1A6-C975-4174-BE70-E1D9CF0B7256}.Release|x86.ActiveCfg = Release|Win32
 		{FF0CC1A6-C975-4174-BE70-E1D9CF0B7256}.Release|x86.Build.0 = Release|Win32
+		{64B8E808-2322-4ACC-AF41-5C26D2B5D392}.Debug|x64.ActiveCfg = Debug|x64
+		{64B8E808-2322-4ACC-AF41-5C26D2B5D392}.Debug|x64.Build.0 = Debug|x64
+		{64B8E808-2322-4ACC-AF41-5C26D2B5D392}.Debug|x86.ActiveCfg = Debug|Win32
+		{64B8E808-2322-4ACC-AF41-5C26D2B5D392}.Debug|x86.Build.0 = Debug|Win32
+		{64B8E808-2322-4ACC-AF41-5C26D2B5D392}.Release|x64.ActiveCfg = Release|x64
+		{64B8E808-2322-4ACC-AF41-5C26D2B5D392}.Release|x64.Build.0 = Release|x64
+		{64B8E808-2322-4ACC-AF41-5C26D2B5D392}.Release|x86.ActiveCfg = Release|Win32
+		{64B8E808-2322-4ACC-AF41-5C26D2B5D392}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

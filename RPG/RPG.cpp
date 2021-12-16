@@ -67,10 +67,14 @@ int main()
 	int ScissorMin = 25;
 	int ScissorRand;
 	ScissorRand = (ScissorMin)+rand() % (ScissorMax - ScissorMax + 1); //Random Game end attack
-
-	printf("What do you want to be known as?\n");
-	cin >> PlayerName;
-	system("CLS");
+	while (1 < 2) {
+		printf("What do you want to be known as?\n");
+		cin >> PlayerName;
+		system("CLS");
+		printf("are you sure that what %s want your name to be?\n" PlayerName.c_str())
+	
+	
+	}
 
 	cout << "Hello " << PlayerName << endl;
 	printf("Are you Ready to start the game?\n"); 
