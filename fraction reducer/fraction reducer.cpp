@@ -34,6 +34,5 @@ int main()
 	num1 = num1 / gcf;
 	num2 = num2 / gcf;
 	printf("This is your reduced fraction :)\n %i \n %i\n", num1, num2);
-
-}
 return 0;
+}

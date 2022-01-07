@@ -49,6 +49,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Fortune cookie", "Fortune c
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fraction reducer", "fraction reducer\fraction reducer.vcxproj", "{738A97D2-9387-4E43-8718-654E497FFD23}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "root Reducer", "root Reducer\root Reducer.vcxproj", "{23A04235-62F6-44D1-83EF-C11ECFE18720}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -241,6 +243,14 @@ Global
 		{738A97D2-9387-4E43-8718-654E497FFD23}.Release|x64.Build.0 = Release|x64
 		{738A97D2-9387-4E43-8718-654E497FFD23}.Release|x86.ActiveCfg = Release|Win32
 		{738A97D2-9387-4E43-8718-654E497FFD23}.Release|x86.Build.0 = Release|Win32
+		{23A04235-62F6-44D1-83EF-C11ECFE18720}.Debug|x64.ActiveCfg = Debug|x64
+		{23A04235-62F6-44D1-83EF-C11ECFE18720}.Debug|x64.Build.0 = Debug|x64
+		{23A04235-62F6-44D1-83EF-C11ECFE18720}.Debug|x86.ActiveCfg = Debug|Win32
+		{23A04235-62F6-44D1-83EF-C11ECFE18720}.Debug|x86.Build.0 = Debug|Win32
+		{23A04235-62F6-44D1-83EF-C11ECFE18720}.Release|x64.ActiveCfg = Release|x64
+		{23A04235-62F6-44D1-83EF-C11ECFE18720}.Release|x64.Build.0 = Release|x64
+		{23A04235-62F6-44D1-83EF-C11ECFE18720}.Release|x86.ActiveCfg = Release|Win32
+		{23A04235-62F6-44D1-83EF-C11ECFE18720}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
