@@ -1,4 +1,9 @@
+/*
+name: slater swart
+problem : make a looping maze that doesn't close doors
 
+
+*/
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>

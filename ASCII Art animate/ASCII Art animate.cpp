@@ -1,3 +1,10 @@
+/*	
+Name:  Slater Swart
+Problem: make animated art
+Pseudocode :
+
+
+*/
 #include <iostream>
 #include <conio.h>
 #include <iostream>
