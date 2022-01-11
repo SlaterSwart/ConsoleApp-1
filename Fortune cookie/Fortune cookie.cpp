@@ -14,25 +14,38 @@ string fortunethingcookie(int choice) {
 	string fortunes;
 	switch (choice) {
 		case 1:
-			You will find a bushel of money
+			fortunes = printf("You will find a bushel of money\n");
 		case 2:
-			Your smile will tell you what makes you feel good.
+			fortunes = printf("Your smile will tell you what makes you feel good.\n");
 		case 3:
-			The best year - round temperature is a warm heart and a cool head
+			fortunes = printf("The best year - round temperature is a warm heart and a cool head\n");
 		case 4:
-			It could be better, but it’s good enough.
+			fortunes = printf("It could be better, but it’s good enough.\n");
 		case 5:
-			You will find a thing.It may be important
+			fortunes = printf("You will find a thing.It may be important\n");
 		case 6:
-			Two days from now, tomorrow will be yesterday.
+			fortunes = printf("Two days from now, tomorrow will be yesterday.\n");
 		case 7:
-			Stop eating now. Food poisoning no fun.
+			fortunes = printf("Stop eating now. Food poisoning no fun.\n");
 		case 8:
-			Person who eat fortune cookie get lousy dessert.
+			fortunes = printf("Person who eat fortune cookie get lousy dessert.\n");
 		case 9:
-			You will soon have an out of money experience.
+			fortunes = printf("You will soon have an out of money experience.\n");
 		case 10:
-			Person who rests on laurels gets thorn in backside.
+			fortunes = printf("Person who rests on laurels gets thorn in backside.\n");
 		 
 	}
+}
+
+
+int main()
+{
+	int choice;
+	string fortunes = fortunethingcookie(choice)
+
+
+
+
+		SixSidedDie = (minimum)+rand() % (maximum - minimum + 1); // random 6 sided dice
+	printf("6 sided dice:%d\n", SixSidedDie);
 }
