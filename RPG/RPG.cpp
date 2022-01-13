@@ -20,12 +20,41 @@
 #include <thread>
 
 using namespace std;
+
+
+
+
+
+
+struct player{
+	int heath;
+	int damage;
+	string name;
+	//pen
+	float PenHealth;
+	const int PenAttack;
+	int PenAtkMin;
+	int PenAtkMax;
+	int PenAtkRand;
+	}
+
+
+
+
+
+
+
 int main()
 {
+player pen;
+	pen.Penhealth =
 
-	using namespace std::this_thread;     // sleep_for, sleep_until
-	using namespace std::chrono_literals; // ns, us, ms, s, h, etc.
-	using std::chrono::system_clock;
+
+
+
+
+
+
 	//intro
 
 	printf("Hi! I'm Slater, the devoloper of this RPG\n");

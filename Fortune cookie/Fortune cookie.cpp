@@ -14,38 +14,69 @@ string fortunethingcookie(int choice) {
 	string fortunes;
 	switch (choice) {
 		case 1:
-			fortunes = printf("You will find a bushel of money\n");
+			fortunes = "You will find a bushel of money";
+			break;
 		case 2:
-			fortunes = printf("Your smile will tell you what makes you feel good.\n");
+			fortunes = "Your smile will tell you what makes you feel good.";
+			break;
 		case 3:
-			fortunes = printf("The best year - round temperature is a warm heart and a cool head\n");
+			fortunes = "The best year - round temperature is a warm heart and a cool head";
+			break;
 		case 4:
-			fortunes = printf("It could be better, but it’s good enough.\n");
+			fortunes = "It could be better, but it’s good enough.";
+			break;
 		case 5:
-			fortunes = printf("You will find a thing.It may be important\n");
+			fortunes = "You will find a thing.It may be important";
+			break;
 		case 6:
-			fortunes = printf("Two days from now, tomorrow will be yesterday.\n");
+			fortunes = "Two days from now, tomorrow will be yesterday.";
+			break;
 		case 7:
-			fortunes = printf("Stop eating now. Food poisoning no fun.\n");
+			fortunes = "Stop eating now. Food poisoning no fun.";
+			break;
 		case 8:
-			fortunes = printf("Person who eat fortune cookie get lousy dessert.\n");
+			fortunes = "Person who eat fortune cookie get lousy dessert.";
+			break;
 		case 9:
-			fortunes = printf("You will soon have an out of money experience.\n");
+			fortunes = "You will soon have an out of money experience.";
+			break;
 		case 10:
-			fortunes = printf("Person who rests on laurels gets thorn in backside.\n");
-		 
+			fortunes = "Person who rests on laurels gets thorn in backside.";
+			break;
 	}
+	return fortunes;
 }
 
 
 int main()
 {
 	int choice;
-	string fortunes = fortunethingcookie(choice)
+	
+	bool quit = false;
+	while (quit == false) {
+		printf("do you want a fortune? 1 = yes 2 = no\n");
+		cin >> choice;
+		switch (choice)
+		{
+		case 1:
+			printf("choose a number between one and ten.\n");
+			cin >> choice;
+			cout << fortunethingcookie(choice) << endl;
+			
+			break;
+		case 2:
+			quit = true;
+			break;
+		default:
+			printf("bozo");
+			break;
+
+		}
+
+	}
+	
+
+	return 0;
 
 
-
-
-		SixSidedDie = (minimum)+rand() % (maximum - minimum + 1); // random 6 sided dice
-	printf("6 sided dice:%d\n", SixSidedDie);
 }
