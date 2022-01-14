@@ -26,20 +26,22 @@ using namespace std;
 
 
 
-struct player{
-	int heath;
+struct player {
+	int health;
 	int damage;
 	string name;
 	//pen
 	float PenHealth;
 	const int PenAttack;
-	int PenAtkMin;
-	int PenAtkMax;
-	int PenAtkRand;
-	}
+};
 
 
+int Playerattack(int atkhealth, ) {
+	int damage;
+	int health;
+	float PenHealth;
 
+}
 
 
 
@@ -47,7 +49,8 @@ struct player{
 int main()
 {
 player pen;
-	pen.Penhealth =
+pen.PenHealth = 100;
+pen.
 
 
 
