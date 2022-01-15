@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{ff0cc1a6-c975-4174-be70-e1d9cf0b7256}</ProjectGuid>
-    <RootNamespace>Loopingmaze</RootNamespace>
+    <ProjectGuid>{23a04235-62f6-44d1-83ef-c11ecfe18720}</ProjectGuid>
+    <RootNamespace>rootReducer</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Looping maze.cpp" />
+    <ClCompile Include="root Reducer.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -20,26 +20,51 @@
 #include <thread>
 
 using namespace std;
+
+
+
+
+
+
+struct player {
+	int health;
+	int damage;
+	string name;
+	//pen
+	float PenHealth;
+	const int PenAttack;
+};
+
+
+int Playerattack(int atkhealth, ) {
+	int damage;
+	int health;
+	float PenHealth;
+
+}
+
+
+
+
 int main()
 {
-	using namespace std::this_thread;     // sleep_for, sleep_until
-	using namespace std::chrono_literals; // ns, us, ms, s, h, etc.
-	using std::chrono::system_clock;
-	//intro
-	string dot1 = "   ";
-	string dot2 = ".  ";
-	string dot3 = ".. ";
-	string dot4 = "...";
-	string dot5 = " ..";
-	string dot6 = "  .";
+player pen;
+pen.PenHealth = 100;
+pen.
 
+
+
+
+
+
+
+	//intro
 
 	printf("Hi! I'm Slater, the devoloper of this RPG\n");
 	printf("You will be plaing as a piece of paper\n");
 	printf("trying to find your self a stapler so that you can get stapled.\n");
 	printf("you will face other office supplies in order to get across Mr. Miyoshi's room\n");
 	printf("If you make it to the end and get stapled you will be able to play the game again for more staples that might change some things the more you have.\n");
-	printf("Have fun, the whole game is one big office war!\n");
 
 	_getch();
 	system("CLS");
@@ -50,6 +75,7 @@ int main()
 	float NPCHealth = 1000;
 	string PlayerName;
 	string input;
+	bool quit = false;
 
 	//enemy attacks damage:
 	//pen
@@ -68,50 +94,41 @@ int main()
 	int ScissorMin = 25;
 	int ScissorRand;
 	ScissorRand = (ScissorMin)+rand() % (ScissorMax - ScissorMax + 1); //Random Game end attack
-
-	printf("What do you want to be known as?\n");
-	cin >> PlayerName;
-	system("CLS");
-
-	cout << "Hello " << PlayerName << endl;
-	printf("Are you Ready to start the game?\n"); 
-	int i = 1;
-	/*cout << dot1 << endl;
-	while (i < 3, i++)
-	{
-		dot1.replace(dot1.find("   "), 1, dot2);
-		sleep_for(10ns);
-		dot2.replace(dot2.find(".  "), 1, dot3);
-		sleep_for(10ns);
-		dot3.replace(dot3.find(".. "), 1, dot4);
-		sleep_for(10ns);
-		dot4.replace(dot4.find("..."), 1, dot5);
-		sleep_for(10ns);
-		dot5.replace(dot5.find(" .."), 1, dot6);
-		sleep_for(10ns);
-		dot6.replace(dot6.find("  ."), 1, dot1);
-		sleep_for(10ns);
-
-	}
-	*/
-	cin >> input;
-	if (input == "yes")
-	{
+	while (1 < 2) {
+		printf("What do you want to be known as?\n");
+		cin >> PlayerName;
 		system("CLS");
-		printf("Okay!\n");
-		_getch();
-		system("CLS");
-	}
-	else if (input == "no")
-	{
-		printf("Closing program...");
-		sleep_for(10ns);
-		sleep_until(system_clock::now() + 1s);//closes the program after waiting ~1 second
-		return 0;
-	}
+		printf("are you sure that what %s want your name to be?\n", PlayerName.c_str());
 	
-	//story starts here
+	
+	}
 
+	while (quit == false) {
+
+		cout << "Hello " << PlayerName << endl;
+		printf("Are you Ready to start the game?\n");
+		int i = 1;
+
+		cin >> input;
+		if (input == "yes")
+		{
+			system("CLS");
+			printf("Okay!\n");
+			_getch();
+			system("CLS");
+		}
+		else if (input == "no")
+		{
+			printf("Closing program...");
+			sleep_for(10ns);
+			sleep_until(system_clock::now() + 1s);//closes the program after waiting ~1 second
+			return 0;
+		}
+	}
+	//story starts here
+	while (quit == false) {
+		
+	}
 	_getch();
 	return 0;					
 }

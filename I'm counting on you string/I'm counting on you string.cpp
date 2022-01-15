@@ -1,5 +1,14 @@
-// I'm counting on you string.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+/*
+Name:  Slater Swart
+Problem:  out put the amount of characters in a string 
+Pseudocode :
+
+input
+count
+output
+done 
+*/
+
 #include <iostream>
 #include <string>
 #include <stdio.h>
@@ -39,7 +48,7 @@ int main()
 		{
 			newline++;
 		}
-		else if (userText[1] == '%i')
+		else if (userText[i] >= '0' || userText[i] <= '9')
 		{
 			numbers++;
 		}

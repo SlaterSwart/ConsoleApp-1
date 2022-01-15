@@ -6,10 +6,7 @@ Name:  Slater Swart
 
 
 
-	Notes:
-	Maintenance log:
-		Date started:9/13/21		Done:
-		10/2/21: started really doing something, i added some health and damage values
+	
 */
 
 #include <iostream>

@@ -1,4 +1,11 @@
+/*	Name:  Slater Swart
+Problem:  change numbers to roman numbers
+Pseudocode :
+input
+run through switch 
+out put the number
 
+*/
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>

@@ -71,3 +71,21 @@ int main()
 	return 0;
 }
 
+
+
+
+
+
+
+
+int bruh(asjkdha) {
+	int i;
+	while (i < 100) {
+		i++;
+		if (i == 39) {
+			i++;
+			i++
+		}
+		printf("%i", i);
+	}
+}
