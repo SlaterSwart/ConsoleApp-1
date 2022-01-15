@@ -28,19 +28,60 @@ using namespace std;
 
 struct player {
 	int health;
-	int damage;
+	int strength;
 	string name;
-	//pen
-	float PenHealth;
-	const int PenAttack;
 };
 
+void gameover() {
+	printf("you lost :/ ");
+	exit(0);//abel showed me this
+}
 
-int Playerattack(int atkhealth, ) {
+int Playerattack(int atkhealth) {
 	int damage;
 	int health;
-	float PenHealth;
+	int enemyDice;
+	int enemyhealth;
+	int playerDice;
+	int minimum = 1;
+	int max6 = 6;
+	int choice;
+	int Max12 = 12;
+	int flawless;
+	flawless = health;
+	bool battleMode;
+	bool enemyAlive = true;
+	while (battleMode == true) {
+		if (!enemyAlive) {
+			printf("you killed the enemy\n you got +1 strength\n");
+		}
+		if (health <= 0) {
+			gameover();
+		}
+		
+		enemyDice = (minimum)+rand() % (Max12 - minimum + 1); //random 12 sided dice
+			
+		printf("choose a dice. 12 can do twice the amount of damage (chance will increase depending on you strength) |1 for 6 sided dice||2 for 12 sided dice|\n");
+		cin >> choice;
+		if (choice == 1) {
+			playerDice = (minimum)+rand() % (max6 - minimum + 1); // random 6 sided dice
+			if (playerDice < enemyDice) {
+				if (enemyDice >= 7) {
+					health = health * .75;
+				}
+				health = health * .9;
+			}
+			else if (playerDice > enemyDice){
 
+			}
+		
+		}
+		if (health == flawless) {
+			printf("you gained 50 health because you took no damage\n");
+			health = health + 50;
+			cout << health << endl;
+		}
+	}
 }
 
 
@@ -48,9 +89,11 @@ int Playerattack(int atkhealth, ) {
 
 int main()
 {
-player pen;
-pen.PenHealth = 100;
-pen.
+	player player1;
+	player1.strength = 15;
+	player1.health = 100;
+
+
 
 
 
