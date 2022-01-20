@@ -35,7 +35,7 @@ struct player {
 void gameover() {
 	printf("you lost :/ ");
 
-	exit(0);//abel showed me this
+	exit(0);
 	
 }
 
