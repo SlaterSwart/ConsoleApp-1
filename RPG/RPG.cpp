@@ -39,18 +39,17 @@ void gameover() {
 	
 }
 
-int Playerattack(int health, int damage) {
-
+int Playerattack(int &health, int &damage) {
+	
 }
 
-int roomtype1(int health, int damage) {
+int roomtype1(int &health, int &damage) {
 
 	return health;
-	return damage;
 }
 
-int roomtype2(int health, int damage) {
-
+int roomtype2(int health, int &damage) {
+	health = 99
 	return health;
 }
 
@@ -76,7 +75,7 @@ int main()
 	player1.health = 100;
 
 
-
+	
 
 
 
