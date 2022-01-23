@@ -1,6 +1,6 @@
 /*	Name:  Slater Swart
 	Project name: RPG
-	Problem: 
+	Problem: make a RPG
 	Pseudocode: 
 	Notes:  
 	Maintenance log: 
@@ -25,44 +25,85 @@ using namespace std;
 
 
 
-
-struct player {
+class player {
 	int health;
 	int strength;
 	string name;
 };
 
 void gameover() {
-	printf("you lost :/ ");
 
+	printf("you lost :/ ");
 	exit(0);
 	
 }
 
-int Playerattack(int &health, int &damage) {
-	
+int Playerattack(int &health, int &damage, int EnemyDamage, int Enemyhealth) {
+	int choice;
+	bool EnemyAlive = true;
+	while (EnemyAlive == true) {
+		if (health <= 0) {
+			gameover();
+		}
+		if (Enemyhealth <= 0) {
+			printf("Wow! you killed the enemy. Honestly i didn't think you could do it.\n");
+			printf("because you did so well i will be rewarding you with a strength buff\n");
+			damage += 5;
+			break;
+		}
+		prinft("How to you want to deal with the enemy. 1 = dodge | 2 = hit |\n")
+			cin << choice;
+		int dodgechance = (rand() % 3) + 1;
+		if (choice == 1) {
+			print("coward >:( you dodged, no damage taken.\n");
+		}
+		else if (choice == 2) {
+			Enemyhealth = Enemyhealth - damage;
+			if (dodgechance == 1 || 2) {
+				printf("the Enemy just hit you!\n ");
+				printf("narrator: oh no, this is the downfall.\n");
+				health = health - EnemyDamage;
+			}
+			else {
+				printf("this Bozo Enemy just missed! can you beleive this guy lol\n");
+			}
+		}
+		else {
+			printf("invalid key detected, try again\n");
+			printf("%d\t", health);
+			health--;
+			printf("--> %d\n", health);
+		}
+	}
 }
 
-int roomtype1(int &health, int &damage) {
+int room1 (int &health, &damage, int EnemyDamage, int Enemyhealth){}
+int room2 (int &health, &damage, int EnemyDamage, int Enemyhealth){}
+int room3 (int &health, &damage, int EnemyDamage, int Enemyhealth){}
+int room4 (int &health, &damage, int EnemyDamage, int Enemyhealth){}
+int room5 (int &health, &damage, int EnemyDamage, int Enemyhealth){}
+int room6 (int &health, &damage, int EnemyDamage, int Enemyhealth){}
+int room7 (int &health, &damage, int EnemyDamage, int Enemyhealth){}
+int room8 (int &health, &damage, int EnemyDamage, int Enemyhealth){}
+int room9 (int& health, &damage, int EnemyDamage, int Enemyhealth) {}
+int room10 (int &health, &damage, int EnemyDamage, int Enemyhealth){}
+int room11  (int &health, &damage, int EnemyDamage, int Enemyhealth){}
+int room12  (int &health, &damage, int EnemyDamage, int Enemyhealth){}
+int room13  (int &health, &damage, int EnemyDamage, int Enemyhealth){}
+int room14  (int &health, &damage, int EnemyDamage, int Enemyhealth){}
+int room15  (int &health, &damage, int EnemyDamage, int Enemyhealth){}
+int room16  (int &health, &damage, int EnemyDamage, int Enemyhealth){}
+int room17  (int &health, &damage, int EnemyDamage, int Enemyhealth){}
+int room18  (int &health, &damage, int EnemyDamage, int Enemyhealth){}
+int room19  (int &health, &damage, int EnemyDamage, int Enemyhealth){}
+int room20 (int &health, &damage, int EnemyDamage, int Enemyhealth){}
+int room21  (int &health, &damage, int EnemyDamage, int Enemyhealth){}
+int room22  (int &health, &damage, int EnemyDamage, int Enemyhealth){}
+int room23  (int &health, &damage, int EnemyDamage, int Enemyhealth){}
+int room24  (int &health, &damage, int EnemyDamage, int Enemyhealth){}
 
-	return health;
-}
 
-int roomtype2(int health, int &damage) {
-	health = 99
-	return health;
-}
-
-int roomtype3(int health, int damage) {
-
-	return health;
-}
-
-int roomtype4(int health, int damage) {
-
-	return health;
-}
-int bossRoom(int health, int damage) {
+int bossRoom(int &health, int &damage, int EnemyDamage, int Enemyhealth ) {
 
 	return health;
 }
@@ -70,6 +111,7 @@ int bossRoom(int health, int damage) {
 
 int main()
 {
+
 	player player1;
 	player1.damage = 5;
 	player1.health = 100;
