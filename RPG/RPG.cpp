@@ -1,5 +1,5 @@
-/*	Name:  Slater Swart
-	Project name: RPG
+//	Name:  Slater Swart
+/*	Project name : RPG
 	Problem: make a RPG
 	Pseudocode: 
 	Notes:  
@@ -105,7 +105,7 @@ int room24  (int &health, &damage, int EnemyDamage, int Enemyhealth){}
 
 int bossRoom(int &health, int &damage, int EnemyDamage, int Enemyhealth ) {
 
-	return health;
+
 }
 
 
@@ -141,24 +141,9 @@ int main()
 	string input;
 	bool quit = false;
 
-	//enemy attacks damage:
-	//pen
-	float PenHealth = 250;
-	const int PenAttack = 20;
-	int PenAtkMin = 1;
-	int PenAtkMax = 40;
-	int PenAtkRand;
-	PenAtkRand = (PenAtkMin)+rand() % (PenAtkMax - PenAtkMin + 1); // random damage for Pen
-	//first Boss, scissors 
-	float ScissorHealth = 1000;
-	const int ScissorBaseDmg = 25;
-	bool ScissorDodge = 1; // Place holder, Don't keep this as 1!
-	//ScissorDodge ++1 then --1 in every fight i guess 
-	int ScissorMax = 1500;
-	int ScissorMin = 25;
-	int ScissorRand;
-	ScissorRand = (ScissorMin)+rand() % (ScissorMax - ScissorMax + 1); //Random Game end attack
+
 	while (1 < 2) {
+		int nameInput;
 		printf("What do you want to be known as?\n");
 		cin >> PlayerName;
 		system("CLS");
@@ -188,6 +173,7 @@ int main()
 			sleep_until(system_clock::now() + 1s);//closes the program after waiting ~1 second
 			return 0;
 		}
+
 	}
 	//story starts here
 	
