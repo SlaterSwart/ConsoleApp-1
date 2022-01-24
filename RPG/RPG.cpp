@@ -18,16 +18,16 @@
 #include <regex>
 #include <chrono>
 #include <thread>
-#include <wincrypt.h>
+
 
 using namespace std;
 
 
 
 
-class player {
+struct player {
 	int health;
-	int strength;
+	int damage;
 	string name;
 };
 
@@ -38,7 +38,7 @@ void gameover() {
 	
 }
 
-int Playerattack(int &health, int &damage, int EnemyDamage, int Enemyhealth) {
+int Attack(int Dificult, int &health, int &damage, int EnemyDamage, int Enemyhealth) {
 	int choice;
 	bool EnemyAlive = true;
 	while (EnemyAlive == true) {
@@ -48,14 +48,14 @@ int Playerattack(int &health, int &damage, int EnemyDamage, int Enemyhealth) {
 		if (Enemyhealth <= 0) {
 			printf("Wow! you killed the enemy. Honestly i didn't think you could do it.\n");
 			printf("because you did so well i will be rewarding you with a strength buff\n");
-			damage += 5;
+			health *= 1.10;
 			break;
 		}
-		prinft("How to you want to deal with the enemy. 1 = dodge | 2 = hit |\n")
-			cin << choice;
+		printf("How to you want to deal with the enemy. 1 = dodge | 2 = hit |\n");
+			cin >> choice;
 		int dodgechance = (rand() % 3) + 1;
 		if (choice == 1) {
-			print("coward >:( you dodged, no damage taken.\n");
+			printf("coward >:( you dodged, no damage taken.\n");
 		}
 		else if (choice == 2) {
 			Enemyhealth = Enemyhealth - damage;
@@ -77,35 +77,94 @@ int Playerattack(int &health, int &damage, int EnemyDamage, int Enemyhealth) {
 	}
 }
 
-int room1 (int &health, &damage, int EnemyDamage, int Enemyhealth){}
-int room2 (int &health, &damage, int EnemyDamage, int Enemyhealth){}
-int room3 (int &health, &damage, int EnemyDamage, int Enemyhealth){}
-int room4 (int &health, &damage, int EnemyDamage, int Enemyhealth){}
-int room5 (int &health, &damage, int EnemyDamage, int Enemyhealth){}
-int room6 (int &health, &damage, int EnemyDamage, int Enemyhealth){}
-int room7 (int &health, &damage, int EnemyDamage, int Enemyhealth){}
-int room8 (int &health, &damage, int EnemyDamage, int Enemyhealth){}
-int room9 (int& health, &damage, int EnemyDamage, int Enemyhealth) {}
-int room10 (int &health, &damage, int EnemyDamage, int Enemyhealth){}
-int room11  (int &health, &damage, int EnemyDamage, int Enemyhealth){}
-int room12  (int &health, &damage, int EnemyDamage, int Enemyhealth){}
-int room13  (int &health, &damage, int EnemyDamage, int Enemyhealth){}
-int room14  (int &health, &damage, int EnemyDamage, int Enemyhealth){}
-int room15  (int &health, &damage, int EnemyDamage, int Enemyhealth){}
-int room16  (int &health, &damage, int EnemyDamage, int Enemyhealth){}
-int room17  (int &health, &damage, int EnemyDamage, int Enemyhealth){}
-int room18  (int &health, &damage, int EnemyDamage, int Enemyhealth){}
-int room19  (int &health, &damage, int EnemyDamage, int Enemyhealth){}
-int room20 (int &health, &damage, int EnemyDamage, int Enemyhealth){}
-int room21  (int &health, &damage, int EnemyDamage, int Enemyhealth){}
-int room22  (int &health, &damage, int EnemyDamage, int Enemyhealth){}
-int room23  (int &health, &damage, int EnemyDamage, int Enemyhealth){}
-int room24  (int &health, &damage, int EnemyDamage, int Enemyhealth){}
+int room1 (int &Dificult, int &health, int &damage, int EnemyDamage, int Enemyhealth){
+	 EnemyDamage = 10;
+	 Enemyhealth = 20;
+	 bool RoomActive = true;
+	 while (RoomActive == true) {
+		 printf("it's getting pretty dark int Miyoshi's room. i better find some shelter for the night before the office supplies find me (foreshadowing)\n");
+		 for (int i = 0; i++; i == 5) {
+			 Attack(int Dificult, int& health, int& damage, int EnemyDamage, int Enemyhealth);
+
+		}
+	 }
+	 
+
+}
+int room2 (int &health, int &damage, int EnemyDamage, int Enemyhealth){
+	EnemyDamage = 11;
+}
+int room3 (int &health, int &damage, int EnemyDamage, int Enemyhealth){
+	EnemyDamage = 11;
+}
+int room4 (int &health, int &damage, int EnemyDamage, int Enemyhealth){
+	EnemyDamage = 11;
+}
+int room5 (int &health, int &damage, int EnemyDamage, int Enemyhealth){
+	EnemyDamage = 11;
+}
+int room6 (int &health, int &damage, int EnemyDamage, int Enemyhealth){
+	EnemyDamage = 11;
+}
+int room7 (int &health, int &damage, int EnemyDamage, int Enemyhealth){
+	EnemyDamage = 11;
+}
+int room8 (int &health, int &damage, int EnemyDamage, int Enemyhealth){
+	EnemyDamage = 11;
+}
+int room9 (int& health, int &damage, int EnemyDamage, int Enemyhealth) {
+	EnemyDamage = 11;
+}
+int room10 (int &health, int &damage, int EnemyDamage, int Enemyhealth){
+	EnemyDamage = 11;
+}
+int room11  (int &health, int &damage, int EnemyDamage, int Enemyhealth){
+	EnemyDamage = 11;
+}
+int room12  (int &health, int &damage, int EnemyDamage, int Enemyhealth){
+	EnemyDamage = 11;
+}
+int room13  (int &health, int &damage, int EnemyDamage, int Enemyhealth){
+	EnemyDamage = 11;
+}
+int room14  (int &health, int &damage, int EnemyDamage, int Enemyhealth){
+	EnemyDamage = 11;
+}
+int room15  (int &health, int &damage, int EnemyDamage, int Enemyhealth){
+	EnemyDamage = 11;
+}
+int room16  (int &health, int &damage, int EnemyDamage, int Enemyhealth){
+	EnemyDamage = 11;
+}
+int room17  (int &health, int &damage, int EnemyDamage, int Enemyhealth){
+	EnemyDamage = 11;
+}
+int room18  (int &health, int &damage, int EnemyDamage, int Enemyhealth){
+	int EnemyDamage = 11;
+}
+int room19  (int &health, int &damage, int EnemyDamage, int Enemyhealth){
+	int EnemyDamage = 11;
+}
+int room20 (int &health, int &damage, int EnemyDamage, int Enemyhealth){
+	int EnemyDamage = 11;
+}
+int room21  (int &health, int &damage, int EnemyDamage, int Enemyhealth){
+	int EnemyDamage = 11;
+}
+int room22  (int &health, int &damage, int EnemyDamage, int Enemyhealth){
+	int EnemyDamage = 11;
+}
+int room23  (int &health, int &damage, int EnemyDamage, int Enemyhealth){
+	int EnemyDamage = 11;
+}
+int room24  (int &health, int &damage, int EnemyDamage, int Enemyhealth){
+	int EnemyDamage = 11;
+}
 
 
 int bossRoom(int &health, int &damage, int EnemyDamage, int Enemyhealth ) {
+	int EnemyDamage = 11;
 
-	return health;
 }
 
 
@@ -134,38 +193,7 @@ int main()
 
 	_getch();
 	system("CLS");
-	//real coding starts here
 
-	float NPCHealth = 1000;
-
-	string input;
-	bool quit = false;
-
-	//enemy attacks damage:
-	//pen
-	float PenHealth = 250;
-	const int PenAttack = 20;
-	int PenAtkMin = 1;
-	int PenAtkMax = 40;
-	int PenAtkRand;
-	PenAtkRand = (PenAtkMin)+rand() % (PenAtkMax - PenAtkMin + 1); // random damage for Pen
-	//first Boss, scissors 
-	float ScissorHealth = 1000;
-	const int ScissorBaseDmg = 25;
-	bool ScissorDodge = 1; // Place holder, Don't keep this as 1!
-	//ScissorDodge ++1 then --1 in every fight i guess 
-	int ScissorMax = 1500;
-	int ScissorMin = 25;
-	int ScissorRand;
-	ScissorRand = (ScissorMin)+rand() % (ScissorMax - ScissorMax + 1); //Random Game end attack
-	while (1 < 2) {
-		printf("What do you want to be known as?\n");
-		cin >> PlayerName;
-		system("CLS");
-		printf("are you sure that what %s want your name to be?\n", PlayerName.c_str());
-	
-	
-	}
 
 	while (quit == false) {
 
