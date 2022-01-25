@@ -1,5 +1,5 @@
-/*	Name:  Slater Swart
-	Project name: RPG
+//	Name:  Slater Swart
+/*	Project name : RPG
 	Problem: make a RPG
 	Pseudocode: 
 	Notes:  
@@ -216,6 +216,7 @@ int main()
 			sleep_until(system_clock::now() + 1s);//closes the program after waiting ~1 second
 			return 0;
 		}
+
 	}
 	//story starts here
 	
