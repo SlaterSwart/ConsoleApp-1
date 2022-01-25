@@ -84,7 +84,7 @@ int room1 (int &Dificult, int &health, int &damage, int EnemyDamage, int Enemyhe
 	 while (RoomActive == true) {
 		 printf("it's getting pretty dark int Miyoshi's room. i better find some shelter for the night before the office supplies find me (foreshadowing)\n");
 		 for (int i = 0; i++; i == 5) {
-			 Attack(int Dificult, int& health, int& damage, int EnemyDamage, int Enemyhealth);
+			 Attack( &Dificult, int &health, int& damage, int EnemyDamage, int Enemyhealth);
 
 		}
 	 }
