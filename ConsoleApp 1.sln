@@ -51,6 +51,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fraction reducer", "fractio
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "root Reducer", "root Reducer\root Reducer.vcxproj", "{23A04235-62F6-44D1-83EF-C11ECFE18720}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vector", "vector\vector.vcxproj", "{F72DA914-5B49-4B6E-B48F-7627D5CF89C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -251,6 +253,14 @@ Global
 		{23A04235-62F6-44D1-83EF-C11ECFE18720}.Release|x64.Build.0 = Release|x64
 		{23A04235-62F6-44D1-83EF-C11ECFE18720}.Release|x86.ActiveCfg = Release|Win32
 		{23A04235-62F6-44D1-83EF-C11ECFE18720}.Release|x86.Build.0 = Release|Win32
+		{F72DA914-5B49-4B6E-B48F-7627D5CF89C1}.Debug|x64.ActiveCfg = Debug|x64
+		{F72DA914-5B49-4B6E-B48F-7627D5CF89C1}.Debug|x64.Build.0 = Debug|x64
+		{F72DA914-5B49-4B6E-B48F-7627D5CF89C1}.Debug|x86.ActiveCfg = Debug|Win32
+		{F72DA914-5B49-4B6E-B48F-7627D5CF89C1}.Debug|x86.Build.0 = Debug|Win32
+		{F72DA914-5B49-4B6E-B48F-7627D5CF89C1}.Release|x64.ActiveCfg = Release|x64
+		{F72DA914-5B49-4B6E-B48F-7627D5CF89C1}.Release|x64.Build.0 = Release|x64
+		{F72DA914-5B49-4B6E-B48F-7627D5CF89C1}.Release|x86.ActiveCfg = Release|Win32
+		{F72DA914-5B49-4B6E-B48F-7627D5CF89C1}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

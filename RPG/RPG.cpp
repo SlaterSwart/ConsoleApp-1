@@ -258,7 +258,7 @@ int main()
 		   int room7played = 0;
 		   int room8played = 0;
 		   int room9played = 0;
-		   int room10played = 0;
+		  /* int room10played = 0;
 		   int room11played = 0;
 		   int room12played = 0;
 		   int room13played = 0;
@@ -273,6 +273,7 @@ int main()
 		   int room22played = 0;
 		   int room23played = 0;
 		   int room24played = 0;
+		   */
 		   bool room1 = false;
 		   bool room2 = false;
 		   bool room3 = false;
@@ -281,7 +282,7 @@ int main()
 		   bool room6 = false;
 		   bool room7 = false;
 		   bool room8 = false;
-		   bool room9 = false;
+		 /*  bool room9 = false;
 		   bool room10 = false;
 		   bool room11 = false;
 		   bool room12 = false;
@@ -297,31 +298,47 @@ int main()
 		   bool room22 = false;
 		   bool room23 = false;
 		   bool room24 = false;
-		   bool room25 = false;
+		   bool room25 = false; */
 		   int roomChoice;
-
+		   int dificult = 0;
+		   
 		   printf("What room would you like to start in? As the number gets higher, the difficulty gets harder! room 1 is advised.\n");
 		   cin >> roomChoice;
 		   switch (roomChoice)
 		   {
 			
 			  case 1:
+				  room1 = true;
+				  break;
 
 			  case 2:
+				  room2 = true;
+				  break;
 
 			  case 3:
+				  room3 = true;
+				  break;
 
 			  case 4:
+				  room4 = true;
+				  break;
 
 			  case 5:
+				  room5 = true;
+				  break;
 
 			  case 6:
+				  room6 = true;
+				  break;
 
 			  case 7:
+				  room7 = true;
+				  break;
 
 			  case 8:
+				  room8 = true;
 
-			  case 9:
+			 /* case 9:
 
 			  case 10:
 
@@ -353,14 +370,8 @@ int main()
 
 			  case 24:
 
-			  case 25:
-			
-
-
-
-
-
-
+			  case 25: */
+			if (room1)
 
 		   }
 
