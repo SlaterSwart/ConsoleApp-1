@@ -1,5 +1,5 @@
 // look up table.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+//Slater Swart
 
 #include <iostream>
 #include <vector>
@@ -17,9 +17,9 @@ int main()
 	srand((unsigned)time(NULL));
 
 	vector<vector<int>> table; //perm vector
-	for (int i = 1; i < 12; i++) {
+	for (int i = 1; i <= 12; i++) {
 	vector<int> pushVec; //temp vector
-		for (int f = 1; f < 12; f++) {
+		for (int f = 1; f <= 12; f++) {
 			pushVec.push_back(i * f);
 		}
 		table.push_back(pushVec); // populate vector 
@@ -32,7 +32,7 @@ int main()
 			int answer = 0;
 			LX8_Cordless_Laser_Mouse = rand() % 12;
 			LX6_Cordless_Optical_Mouse = rand() % 12;
-			printf("Random equation: %d * %d\n", LX8_Cordless_Laser_Mouse, LX6_Cordless_Optical_Mouse);
+			printf("Random equation: %d * %d\n", LX8_Cordless_Laser_Mouse + 1, LX6_Cordless_Optical_Mouse + 1);
 			printf("what is your answer?\n");
 			cin >> answer;
 			if (answer == table[LX8_Cordless_Laser_Mouse][LX6_Cordless_Optical_Mouse]) {

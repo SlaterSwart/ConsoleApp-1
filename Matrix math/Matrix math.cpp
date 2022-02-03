@@ -23,7 +23,7 @@ int main()
 	};
 	vector<vector<int>> C;
 	vector<int> DotValue;
-	DotValue.push_back(A[0][0] * B[0][0]);//because you a mulitpling the first row of A and the first colum of B it goes in the first row first colom, if i were to to first row of A ans second row of B it would go in first row second colum. and same goes for the opposite 
+	DotValue.push_back(A[0][0] * B[0][0] + A[1][0] * B[0][1]);//because you a mulitpling the first row of A and the first colum of B it goes in the first row first colom, if i were to to first row of A ans second row of B it would go in first row second colum. and same goes for the opposite 
 
 }
 
