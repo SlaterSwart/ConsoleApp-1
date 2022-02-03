@@ -59,6 +59,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Fortune cookie vector", "Fo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "look up table", "look up table\look up table.vcxproj", "{B8FB8140-CC36-4B2F-AA70-B13637D0D454}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Matrix math", "Matrix math\Matrix math.vcxproj", "{623724ED-23B1-48DC-8B86-29753E3FFD04}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -291,6 +293,14 @@ Global
 		{B8FB8140-CC36-4B2F-AA70-B13637D0D454}.Release|x64.Build.0 = Release|x64
 		{B8FB8140-CC36-4B2F-AA70-B13637D0D454}.Release|x86.ActiveCfg = Release|Win32
 		{B8FB8140-CC36-4B2F-AA70-B13637D0D454}.Release|x86.Build.0 = Release|Win32
+		{623724ED-23B1-48DC-8B86-29753E3FFD04}.Debug|x64.ActiveCfg = Debug|x64
+		{623724ED-23B1-48DC-8B86-29753E3FFD04}.Debug|x64.Build.0 = Debug|x64
+		{623724ED-23B1-48DC-8B86-29753E3FFD04}.Debug|x86.ActiveCfg = Debug|Win32
+		{623724ED-23B1-48DC-8B86-29753E3FFD04}.Debug|x86.Build.0 = Debug|Win32
+		{623724ED-23B1-48DC-8B86-29753E3FFD04}.Release|x64.ActiveCfg = Release|x64
+		{623724ED-23B1-48DC-8B86-29753E3FFD04}.Release|x64.Build.0 = Release|x64
+		{623724ED-23B1-48DC-8B86-29753E3FFD04}.Release|x86.ActiveCfg = Release|Win32
+		{623724ED-23B1-48DC-8B86-29753E3FFD04}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
