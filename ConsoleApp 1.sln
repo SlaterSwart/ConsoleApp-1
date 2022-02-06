@@ -65,6 +65,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cosine and sine", "cosine a
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Counting on a file", "Counting on a file\Counting on a file.vcxproj", "{EBC16E1E-6EE8-41AF-9BE8-A0B97169CB15}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "File gs  problem 2", "File gs  problem 2\File gs  problem 2.vcxproj", "{21911E19-7221-4952-B6B6-2EDBA7FDA053}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Encrypt and Decrypt", "Encrypt and Decrypt\Encrypt and Decrypt.vcxproj", "{09A28CE5-5236-486F-8CA7-326487B9FDCE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -321,6 +325,22 @@ Global
 		{EBC16E1E-6EE8-41AF-9BE8-A0B97169CB15}.Release|x64.Build.0 = Release|x64
 		{EBC16E1E-6EE8-41AF-9BE8-A0B97169CB15}.Release|x86.ActiveCfg = Release|Win32
 		{EBC16E1E-6EE8-41AF-9BE8-A0B97169CB15}.Release|x86.Build.0 = Release|Win32
+		{21911E19-7221-4952-B6B6-2EDBA7FDA053}.Debug|x64.ActiveCfg = Debug|x64
+		{21911E19-7221-4952-B6B6-2EDBA7FDA053}.Debug|x64.Build.0 = Debug|x64
+		{21911E19-7221-4952-B6B6-2EDBA7FDA053}.Debug|x86.ActiveCfg = Debug|Win32
+		{21911E19-7221-4952-B6B6-2EDBA7FDA053}.Debug|x86.Build.0 = Debug|Win32
+		{21911E19-7221-4952-B6B6-2EDBA7FDA053}.Release|x64.ActiveCfg = Release|x64
+		{21911E19-7221-4952-B6B6-2EDBA7FDA053}.Release|x64.Build.0 = Release|x64
+		{21911E19-7221-4952-B6B6-2EDBA7FDA053}.Release|x86.ActiveCfg = Release|Win32
+		{21911E19-7221-4952-B6B6-2EDBA7FDA053}.Release|x86.Build.0 = Release|Win32
+		{09A28CE5-5236-486F-8CA7-326487B9FDCE}.Debug|x64.ActiveCfg = Debug|x64
+		{09A28CE5-5236-486F-8CA7-326487B9FDCE}.Debug|x64.Build.0 = Debug|x64
+		{09A28CE5-5236-486F-8CA7-326487B9FDCE}.Debug|x86.ActiveCfg = Debug|Win32
+		{09A28CE5-5236-486F-8CA7-326487B9FDCE}.Debug|x86.Build.0 = Debug|Win32
+		{09A28CE5-5236-486F-8CA7-326487B9FDCE}.Release|x64.ActiveCfg = Release|x64
+		{09A28CE5-5236-486F-8CA7-326487B9FDCE}.Release|x64.Build.0 = Release|x64
+		{09A28CE5-5236-486F-8CA7-326487B9FDCE}.Release|x86.ActiveCfg = Release|Win32
+		{09A28CE5-5236-486F-8CA7-326487B9FDCE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

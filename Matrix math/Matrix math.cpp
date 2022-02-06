@@ -24,11 +24,14 @@ int main()
 	vector<vector<int>> C;
 	
 	for (int i = 0; i < 3; i++) {
-		vector<int> DotValue;
+		vector<int> DotValue{ 0, 0, 0, };
+		int temp = 0;
 		
 		for (int x = 0; x < 3; x++) {
 
 			for (int e = 0; 3 < 3; e++) {
+				//temp += A[i][e] * B[e][x];
+				//DotValue.push_back(temp);
 				DotValue[x] += A[i][e] * B[e][x];
 			}
 			C.push_back(DotValue);

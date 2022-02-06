@@ -28,7 +28,7 @@ int main()
 			else if (temp[i] == '\t')
 			{
 				tabs++;
-			}
+			}	
 			else if (temp[i] == '\n')
 			{
 				newline++;
