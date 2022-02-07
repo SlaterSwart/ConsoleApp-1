@@ -15,7 +15,7 @@ void DataDecrypt(string EcptData, fstream in) {
 	for (int i = 0; i < EcptData.length(); i++) {
 
 		num = num * 10 + (EcptData[i] - '0');
-		if (num >= 32 && <= 122) {
+		if (num >= 32 && num <= 122) {
 			char output = (char)num;
 			cout << output;
 			num = 0;
