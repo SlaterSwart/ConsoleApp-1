@@ -15,6 +15,7 @@ int main()
 		{20, 26, 57},
 		{10, 11, 85}
 	};
+
 	vector<vector<int>> B
 	{
 		{42, 36, 13},
@@ -24,27 +25,29 @@ int main()
 	vector<vector<int>> C;
 	
 	for (int i = 0; i < 3; i++) {
-		vector<int> DotValue{ 0, 0, 0, };
-		int temp = 0;
 		
+		//int temp = 0;
+		vector<int> DotValue{ 0, 0, 0 };
 		for (int x = 0; x < 3; x++) {
 
-			for (int e = 0; 3 < 3; e++) {
+		
+			for (int e = 0; e < 3; e++) {
 				//temp += A[i][e] * B[e][x];
 				//DotValue.push_back(temp);
 				DotValue[x] += A[i][e] * B[e][x];
+				
 			}
-			C.push_back(DotValue);
+	
 			
 		}
-		
+		C.push_back(DotValue);
 	}
-	for (int i = 0; i < 3; i++) {
+	for (int i = 0; i < C.size(); i++) {
 		
-		for (int c = 0; c < 3; i++) {
-			cout << C[i][c];
+		for (int c = 0; c < C[i].size(); c++) {
+			cout << C[i][c] << '\t';
 		}
-
+		printf("\n");
 	}
 	return 0;
 }

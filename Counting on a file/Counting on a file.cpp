@@ -1,5 +1,5 @@
 // Counting on a file.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+//Slater Swart problem 1 of gs 11
 
 #include <iostream>
 #include <string>
@@ -18,6 +18,12 @@ int main()
     int tabs = 0;
     int numbers = 0;
     in.open("File.txt");
+
+	if (!in.is_open())
+	{
+		printf("File not found");
+	}
+
     while (getline(in, temp)) {
 		for (int i = 0; i < temp.length(); i++)
 		{
@@ -29,18 +35,14 @@ int main()
 			{
 				tabs++;
 			}	
-			else if (temp[i] == '\n')
-			{
-				newline++;
-			}
-			else if (temp[i] >= '0' || temp[i] <= '9')
+			else if (temp[i] >= '0' && temp[i] <= '9')
 			{
 				numbers++;
 			}
 		}
-
+		newline++;
     }
-	printf("your string has %d spaces, %d tabs, %d new lines, and %d numbers.\n", spaces, tabs, newline, numbers);
+	printf("your string has %d spaces, %d tabs, %d line(s), and %d numbers.\n", spaces, tabs, newline, numbers);
 	_getch();
 	return 0;
 }
