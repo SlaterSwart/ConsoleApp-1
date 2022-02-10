@@ -1,5 +1,5 @@
 // File gs  problem 2.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+//Slater Swart
 
 #include <iostream>
 #include <string>
@@ -11,25 +11,19 @@ using namespace std;
 
 int main()
 {  
-    size_t pos;
     string temp;
     ifstream in;
-    string find = ","; string replace = "\t";
-    int spaces = 0;
-    int newline = 0;
-    int tabs = 0;
-    int numbers = 0;
-    in.open("Data.txt");
-    while(getline(in, temp, ',')){}
-        
-    while ((pos = temp.find(find)) != string::npos) {
-            temp.replace(pos, 1, replace);
-        }
     ofstream out;
+
+    in.open("Data.txt");
     out.open("finalFile.txt");
-    cout << temp;
-    out << temp;
-    out.close();
+
+    while (getline(in, temp, ','))
+    {
+        out << temp << "\t";
+    }
+
+    
     return 0;
 }
 
