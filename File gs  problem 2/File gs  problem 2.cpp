@@ -12,6 +12,10 @@ using namespace std;
 int main()
 {  
     string temp;
+    string temp2;
+    char ch;
+    int i;
+    float f;
     ifstream in;
     ofstream out;
 
@@ -20,9 +24,18 @@ int main()
 
     while (getline(in, temp, ','))
     {
-        out << temp << "\t";
-    }
+        i = stoi(temp);
+        f = stof(temp);
+        getline(in, temp2, ',');
 
+        ch = temp2.at(0);
+        getline(in, temp2);
+
+       
+        out << temp << '\t' << ch << '\t' << i << '\n';
+    }
+    out.close();
+    in.close();
     
     return 0;
 }
