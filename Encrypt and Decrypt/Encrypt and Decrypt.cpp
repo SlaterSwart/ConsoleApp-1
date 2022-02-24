@@ -2,6 +2,7 @@
 //
 
 #include <iostream>
+#include <string>
 #include <bits.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -9,31 +10,38 @@
 #include <fstream>
 using namespace std;
 
-void DataDecrypt(string EcptData, fstream in) {
-	int num = 0;
-	in.open("Encrypt.txt");
-	for (int i = 0; i < EcptData.length(); i++) {
 
-		num = num * 10 + (EcptData[i] - '0');
-		if (num >= 32 && num <= 122) {
-			char output = (char)num;
-			cout << output;
-			num = 0;
-		}
-	}
-	in.close();
-}
-void DataEncrypt(){}
 
 
 int main()
 {
-	string EcptData = 0; // Should be the function for encrypting the letters
-	fstream in;
+	ifstream in;
+	ofstream out;
 	string temp;
-
-
-
+	int input = 0;
+	in.open("Orginal.txt");
+	out.open("Encrypt.txt");
+	printf("enter the number you want to encrypt the message by: ");
+	cin >> input;
+	while (1) {
+		if (input > 94) {
+			input = input - 94;
+			break;
+		}
+		if (input < -94) {
+			input = input + 94;
+			break;
+		}
+	}
+	while (getline(in, temp)) {
+		for (int i = 0; i < temp.length(), i++;) {
+			if (temp[i] == ' ') {
+				continue;
+			}
+			unsigned char ch = temp[i] + input;
+			out << ch;
+		}
+	}
 
 
 }
