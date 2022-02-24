@@ -14,6 +14,10 @@ int main()
 {  
     size_t pos;
     string temp;
+    string temp2;
+    char ch;
+    int i;
+    float f;
     ifstream in;
     ofstream out;
     in.open("Data.txt");
@@ -21,13 +25,20 @@ int main()
     int i = 0;
     while (getline(in, temp, ','))
     {
-        i++;
-        if (temp[i] == ',') {
-            temp[i] = '\t';
-        }
-        out << temp;
+        i = stoi(temp);
+        f = stof(temp);
+        getline(in, temp2, ',');
+
+        ch = temp2.at(0);
+        getline(in, temp2);
+
+       
+        out << temp << '\t' << ch << '\t' << i << '\n';
     }
- return 0;
+    out.close();
+    in.close();
+    
+    return 0;
 }
 
 
