@@ -1,5 +1,6 @@
-// Encrypt and Decrypt.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+// file test.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//Slater Swart
+
 
 #include <iostream>
 #include <string>
@@ -24,9 +25,9 @@ int main()
 	if (!out.is_open()) {
 		printf("Encrypt is not open!\n");
 	}
-	/*if (!in.is_open()) {
+	if (!in.is_open()) {
 		printf("Oringinal is not open\n");
-	}*/
+	}
 	printf("enter the number you want to encrypt the message by: ");
 	cin >> input;
 	while (1) {
@@ -41,18 +42,21 @@ int main()
 		else {
 			break;
 		}
-	
+
 	}
 	while (getline(in, temp)) {
-		for (int i = 0; i < temp.length(), i++;) {
-			if (temp[i] == ' ') {	
+		for (int i = 0; i < temp.length(); i++) {
+			if (temp[i] == ' ') {
 				out << temp[i];
+				cout << temp[i];
 				continue;
 			}
 			unsigned char ch = temp[i] + input;
 			out << ch;
+			cout << ch;
 		}
 		out << endl;
+		cout << endl;
 	}
 	out.close();
 	in.close();
@@ -60,7 +64,7 @@ int main()
 	in.open("Encrypt.txt");
 	out.open("Decrypt.txt");
 	while (getline(in, temp)) {
-		for (int i = 0; i < temp.length(), i++;) {
+		for (int i = 0; i < temp.length(); i++) {
 			if (temp[i] == ' ') {
 				out << temp[i];
 				continue;
@@ -68,6 +72,7 @@ int main()
 			unsigned char ch = temp[i] - input;
 			out << ch;
 		}
+		out << endl;
 	}
-
+	return 0;
 }
