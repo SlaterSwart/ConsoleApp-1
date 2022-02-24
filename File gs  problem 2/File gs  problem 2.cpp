@@ -7,24 +7,27 @@
 #include <stdlib.h>
 #include <conio.h>
 #include <fstream>
+#include <algorithm>
 using namespace std;
 
 int main()
 {  
+    size_t pos;
     string temp;
     ifstream in;
     ofstream out;
-
     in.open("Data.txt");
     out.open("finalFile.txt");
-
+    int i = 0;
     while (getline(in, temp, ','))
     {
-        out << temp << "\t";
+        i++;
+        if (temp[i] == ',') {
+            temp[i] = '\t';
+        }
+        out << temp;
     }
-
-    
-    return 0;
+ return 0;
 }
 
 
