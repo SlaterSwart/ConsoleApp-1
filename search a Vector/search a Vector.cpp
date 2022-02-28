@@ -53,10 +53,10 @@ int main() {
             cout << "Name search: ";
             cin >> input;
             for (int pos = 0; pos < 6; pos++) {
-                if (people[pos].age != input) {
+                if (people[pos].name != input) {
                     cout << "nothing matches your search... searching again.\n";
                 }
-                if (people[pos].age == input) {
+                if (people[pos].name == input) {
                     cout << "Name: " << people[pos].name << "\n";
                     cout << "Age: " << people[pos].age << "\n";
                     cout << "Height: " << people[pos].height << "\n";
