@@ -2,9 +2,34 @@
 //
 
 #include <iostream>
+#include <string>
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <fstream>
+#include <vector>
+using namespace std;
+
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	struct Info {
+		string name;
+		int age;
+		int Height;
+		int Weight;
+		string phone;
+	};
+	ifstream in;
+	in.open("data.txt");
+	string temp;
+	vector <Info> ppls;
+	Info search;
+
+
+	while (getline(in, temp, '|')) {
+
+	}
+
 }
 
