@@ -2,34 +2,73 @@
 //
 
 #include <iostream>
-#include <string>
-#include <stdio.h>
-#include <stdlib.h>
-#include <conio.h>
-#include <fstream>
 #include <vector>
+#include <fstream>
+#include <conio.h>
+#include <string>
+//if ur looking at this you should make all your programs time complex smh imao
 using namespace std;
 
+struct info {
+    string name;
+    int age;
+    int height;
+    int weight;
+    string phoneNumber;
+};
+int main() {
+    string input;
+    vector <info> people(6);
 
-int main()
-{
-	struct Info {
-		string name;
-		int age;
-		int Height;
-		int Weight;
-		string phone;
-	};
-	ifstream in;
-	in.open("data.txt");
-	string temp;
-	vector <Info> ppls;
-	Info search;
+    ifstream in;
+    in.open("Data.txt");
+
+    string temp;
+
+    if (!in.is_open()) {
+        cout << "File not found\n";
+    }
+
+    info person;//temporary instance of the struct
+
+    while (getline(in, person.name, ',')) {
+
+        getline(in, temp, ',');
+        person.age = stoi(temp);
+        getline(in, temp, ',');
+        person.height = stoi(temp);
+        getline(in, temp, ',');
+        person.weight = stoi(temp);
+        getline(in, person.phoneNumber);
+        people.push_back(person);
+    }
+    in.close();
 
 
-	while (getline(in, temp, '|')) {
+    while (true) {
+        cout << "What would you like to search for?\n Age|A|\n Name|N|\n Height|H|\n Weight|W|\n PhoneNumber|#|\n" << endl;
+        cin >> input;
+        switch (input) {
+        case "N":
+            cout << "Name search: ";
+            cin >> input;
+            for (int pos = 0; pos < 6; pos++) {
+                if (people[pos].name != input) {
+                    cout << "nothing matches your search... searching again.\n";
+                }
+                if (people[pos].name == input) {
+                    cout << "Name: " << people[pos].name << "\n";
+                    cout << "Age: " << people[pos].age << "\n";
+                    cout << "Height: " << people[pos].height << "\n";
+                    cout << "Weight: " << people[pos].weight << "\n";
+                    cout << "Phone number: " << people[pos].phoneNumber << "\n" << "\n";
+                    _getch();
+                    system("CLS");
+                }
+            }
+        }
+    }
 
-	}
 
+    return 0;
 }
-

@@ -22,18 +22,18 @@ int main()
     ofstream out;
     in.open("Data.txt");
     out.open("finalFile.txt");
-    int i = 0;
+    i = 0;
     while (getline(in, temp, ','))
     {
         i = stoi(temp);
+        getline(in, temp, ',');
         f = stof(temp);
-        getline(in, temp2, ',');
-
-        ch = temp2.at(0);
-        getline(in, temp2);
-
+        getline(in, temp, ',');
+        temp2 = temp;
+        getline(in, temp, ',');
+        ch = temp.at(0);
        
-        out << temp << '\t' << ch << '\t' << i << '\n';
+        out << i << '\t' << f << '\t' << temp2 << ch << '\t' << '\n';
     }
     out.close();
     in.close();
