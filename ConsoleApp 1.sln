@@ -77,6 +77,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "elipseGSProblem", "elipseGS
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rectangels", "rectangels\rectangels.vcxproj", "{44A0B8C2-209F-498F-994C-308F785C8CAB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TrainglesGoalSheet", "TrainglesGoalSheet\TrainglesGoalSheet.vcxproj", "{FF642C34-D4B2-4591-B5EB-87D01D96F26F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -381,6 +383,14 @@ Global
 		{44A0B8C2-209F-498F-994C-308F785C8CAB}.Release|x64.Build.0 = Release|x64
 		{44A0B8C2-209F-498F-994C-308F785C8CAB}.Release|x86.ActiveCfg = Release|Win32
 		{44A0B8C2-209F-498F-994C-308F785C8CAB}.Release|x86.Build.0 = Release|Win32
+		{FF642C34-D4B2-4591-B5EB-87D01D96F26F}.Debug|x64.ActiveCfg = Debug|x64
+		{FF642C34-D4B2-4591-B5EB-87D01D96F26F}.Debug|x64.Build.0 = Debug|x64
+		{FF642C34-D4B2-4591-B5EB-87D01D96F26F}.Debug|x86.ActiveCfg = Debug|Win32
+		{FF642C34-D4B2-4591-B5EB-87D01D96F26F}.Debug|x86.Build.0 = Debug|Win32
+		{FF642C34-D4B2-4591-B5EB-87D01D96F26F}.Release|x64.ActiveCfg = Release|x64
+		{FF642C34-D4B2-4591-B5EB-87D01D96F26F}.Release|x64.Build.0 = Release|x64
+		{FF642C34-D4B2-4591-B5EB-87D01D96F26F}.Release|x86.ActiveCfg = Release|Win32
+		{FF642C34-D4B2-4591-B5EB-87D01D96F26F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
