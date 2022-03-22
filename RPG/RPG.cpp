@@ -24,7 +24,9 @@
 
 using namespace std;
 
+void saveFiles(int Dificulty, int health, int damage, int name) {
 
+}
 
 
 struct player {

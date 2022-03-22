@@ -26,7 +26,7 @@ float triangle::Perimeter() {
 	return sqrt((L * L + W * W)) + L + W;
 }
 float triangle::area() {
-	return (1 / 2 * W) * L;
+	return (1 / 2.0 * W) * L;
 }
 
 
