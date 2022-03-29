@@ -36,7 +36,7 @@ struct player {
 	string name;
 };
 
-int Attack(int &Dificulty, int &health, int &damage, int EnemyDamage, int Enemyhealth, vector<string> EnemyName) {
+int Attack(int &Dificulty, int &health, int &damage, int EnemyDamage, int Enemyhealth, string EnemyName) {
 	int choice;
 	ofstream out;
 	out.open("save.txt");
@@ -102,14 +102,14 @@ int Attack(int &Dificulty, int &health, int &damage, int EnemyDamage, int Enemyh
 	return 0;
 }
 
-int bossRoom(int &Difficulty, int &health, int &damage, int EnemyDamage, int Enemyhealth, vector<string> EnemyName) {
+int bossRoom(int &Difficulty, int &health, int &damage, int EnemyDamage, int Enemyhealth, string EnemyName) {
 	EnemyDamage = 35;
 	Enemyhealth = 150;
 	bool bossfight = true;
 	while (bossfight == true) {
 		printf("Now that you have defeated all of my enemys you will now have to face the boss.\n");
 		printf("the boss is one of Mr. Miyoshi's evil printing machines! The printer doesn't mess around, so be careful");
-		Attack(Difficulty, health, damage, EnemyDamage, Enemyhealth;
+		Attack(Difficulty, health, damage, EnemyDamage, Enemyhealth, EnemyName);
 	}
 	return 0;
 }
@@ -127,20 +127,21 @@ int main()
 	int EnemyDamage = 0;
 	int Enemyhealth = 0;
 	int Difficulty = 0;
-	vector<string> EnemyName;
-	EnemyName.push_back("Paper clip");
-	EnemyName.push_back("marker");
-	EnemyName.push_back("paper shreder");
-	EnemyName.push_back("300 page book");
-	EnemyName.push_back("eraser");
-	EnemyName.push_back("ruler");
-	EnemyName.push_back("mouse pad");
+	vector<string> EnemyNamev;
+	EnemyNamev.push_back("Paper clip"); 
+	EnemyNamev.push_back("marker");
+	EnemyNamev.push_back("paper shreder");
+	EnemyNamev.push_back("300 page book");
+	EnemyNamev.push_back("eraser");
+	EnemyNamev.push_back("ruler");
+	EnemyNamev.push_back("mouse pad");
+	string EnemyName = "";
 	vector<string> Dialog;
 	Dialog.push_back("You're going to get shreded when I'm done with you! mwahha");
-	Dialog.push_back("");
-	Dialog.push_back("");
-	Dialog.push_back("");
-	Dialog.push_back("");
+	Dialog.push_back("oh nooo! our table, it's broken!");
+	Dialog.push_back("daddy, sorry, daddy, sorry, daddy, sorry");
+	Dialog.push_back("take me out to the back of the shead!");
+	Dialog.push_back("STOOOOP i coulda drop my croissant.");
 	//intro
 
 	printf("Hi! I'm Slater, the devoloper of this RPG\n");
@@ -173,9 +174,14 @@ int main()
 		   
 		   printf("Do you want to start the game? 1 for yes||2 of no");
 		   cin >> roomChoice;
-		  
+			
+
+		   for (int i = 0; i <= 25; i++) {
+			   Attack(Difficulty, player1.health, player1.damage, EnemyDamage, Enemyhealth, EnemyName);
+			   cout << 
+		   }
 			  if (Difficulty == 8) {
-				  bossRoom(Difficulty, player1.health, player1.damage, EnemyDamage, Enemyhealth);
+				  bossRoom(Difficulty, player1.health, player1.damage, EnemyDamage, Enemyhealth, EnemyName);
 				  printf("ahh you beat my great masterpiece. this is so sad. Would you like to try again and maybe try to lose this time to boost my ego?| 1 = yes | 2 = no |\n");
 				  int restart = 0;
 				  cin >> restart;
