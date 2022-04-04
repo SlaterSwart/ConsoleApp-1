@@ -77,15 +77,3 @@ int main()
 
 
 
-
-int bruh(asjkdha) {
-	int i = 15;
-	while (i < 125) {
-		i++;
-		if (i == 39) {
-			i++;
-		
-		}
-		printf("%i", i);
-	}
-}

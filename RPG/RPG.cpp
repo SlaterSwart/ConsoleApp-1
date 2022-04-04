@@ -25,9 +25,14 @@
 
 using namespace std;
 
-void saveFiles(int Dificulty, int health, int damage, int name, ofstream out) {
-	out << Dificulty << ',' << health << ',' << damage << ',' << name << endl;
+void saveFiles(int Dificulty, int health, int damage, int name, ofstream out, bool save_game) {
+	if (save_game == true) {
+		out << Dificulty << ',' << health << ',' << damage << ',' << name << endl;
+	}
+
+	while()
 }
+
 
 
 struct player {
@@ -117,7 +122,8 @@ int bossRoom(int &Difficulty, int &health, int &damage, int EnemyDamage, int Ene
 
 int main()
 {
-
+	bool save_game = 0;
+	srand((unsigned)time(NULL));
 	float Covert_movement = 0.0;
 	player player1;
 	player1.damage = 5;
@@ -139,18 +145,18 @@ int main()
 	vector<string> Dialog;
 	Dialog.push_back("You're going to get shreded when I'm done with you! mwahha");
 	Dialog.push_back("oh nooo! our table, it's broken!");
-	Dialog.push_back("daddy, sorry, daddy, sorry, daddy, sorry");
-	Dialog.push_back("take me out to the back of the shead!");
+	Dialog.push_back("You should give up. NOW!");
+	Dialog.push_back("You're pretty much shreded paper at this point!");
 	Dialog.push_back("STOOOOP i coulda drop my croissant.");
 	//intro
 
-	printf("Hi! I'm Slater, the devoloper of this RPG\n");
+	/*printf("Hi! I'm Slater, the devoloper of this RPG\n");
 	printf("You will be plaing as a piece of paper\n");
 	printf("trying to find your self a stapler so that you can get stapled.\n");
 	printf("you will face other office supplies in order to get across Mr. Miyoshi's room\n");
 	printf("If you make it to the end and get stapled you will be able to play the game again for more staples that might change some things the more you have.\n");
 
-	_getch();
+	_getch();*/
 	system("CLS");
 
 
@@ -177,8 +183,16 @@ int main()
 			
 
 		   for (int i = 0; i <= 25; i++) {
+			  
+			   cout << Dialog[rand() % Dialog.size()];
 			   Attack(Difficulty, player1.health, player1.damage, EnemyDamage, Enemyhealth, EnemyName);
-			   cout << 
+			   if (i == 2) {
+				   player1.health += 10;
+				   printf("You gained ten hp! Health: %d", player1.health);
+				   system("ClS");
+			   }
+
+
 		   }
 			  if (Difficulty == 8) {
 				  bossRoom(Difficulty, player1.health, player1.damage, EnemyDamage, Enemyhealth, EnemyName);
