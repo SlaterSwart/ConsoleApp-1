@@ -30,7 +30,9 @@ void saveFiles(int Dificulty, int health, int damage, int name, ofstream out, bo
 		out << Dificulty << ',' << health << ',' << damage << ',' << name << endl;
 	}
 
-	while()
+	while (true) {
+
+	}
 }
 
 
@@ -186,15 +188,18 @@ int main()
 			  
 			   cout << Dialog[rand() % Dialog.size()];
 			   Attack(Difficulty, player1.health, player1.damage, EnemyDamage, Enemyhealth, EnemyName);
+			   EnemyName = EnemyNamev[rand() % EnemyNamev.size()];
 			   if (i == 2) {
 				   player1.health += 10;
 				   printf("You gained ten hp! Health: %d", player1.health);
 				   system("ClS");
 			   }
 
+			   
 
+			   dificult++;
 		   }
-			  if (Difficulty == 8) {
+			  if (Difficulty == 26) {
 				  bossRoom(Difficulty, player1.health, player1.damage, EnemyDamage, Enemyhealth, EnemyName);
 				  printf("ahh you beat my great masterpiece. this is so sad. Would you like to try again and maybe try to lose this time to boost my ego?| 1 = yes | 2 = no |\n");
 				  int restart = 0;
