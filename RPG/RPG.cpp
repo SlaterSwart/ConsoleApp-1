@@ -124,7 +124,8 @@ int bossRoom(int &Difficulty, int &health, int &damage, int EnemyDamage, int Ene
 
 int main()
 {
-	bool save_game = 0;
+	bool Call_Data = false;
+	bool save_game = false;
 	srand((unsigned)time(NULL));
 	float Covert_movement = 0.0;
 	player player1;
@@ -185,7 +186,9 @@ int main()
 			
 
 		   for (int i = 0; i <= 25; i++) {
-			  
+			   Enemyhealth = 10;
+			   Enemyhealth = Enemyhealth + (i * 2.5);
+			   EnemyDamage = EnemyDamage + (i * 1.5);
 			   cout << Dialog[rand() % Dialog.size()];
 			   Attack(Difficulty, player1.health, player1.damage, EnemyDamage, Enemyhealth, EnemyName);
 			   EnemyName = EnemyNamev[rand() % EnemyNamev.size()];
@@ -194,12 +197,16 @@ int main()
 				   printf("You gained ten hp! Health: %d", player1.health);
 				   system("ClS");
 			   }
+			   if (i == 10) {
+				   //Npc
 
+			   }
 			   
 
 			   dificult++;
 		   }
 			  if (Difficulty == 26) {
+				  EnemyName = "Evil Printer";
 				  bossRoom(Difficulty, player1.health, player1.damage, EnemyDamage, Enemyhealth, EnemyName);
 				  printf("ahh you beat my great masterpiece. this is so sad. Would you like to try again and maybe try to lose this time to boost my ego?| 1 = yes | 2 = no |\n");
 				  int restart = 0;
@@ -225,7 +232,7 @@ int main()
 			quit = true;
 		}
 		
-	}
+	} 
 	return 0;
 	
 }
