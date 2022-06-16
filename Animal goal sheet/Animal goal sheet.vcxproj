@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{9EFAD642-8A16-4652-B314-A4257141D94B}</ProjectGuid>
-    <RootNamespace>ConsoleApp2</RootNamespace>
+    <ProjectGuid>{db356512-a65e-43d6-bc6e-20292b0925d6}</ProjectGuid>
+    <RootNamespace>Animalgoalsheet</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>RPG</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -140,12 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="NPC.cpp" />
-    <ClCompile Include="RPG.cpp" />
+    <ClCompile Include="Animal goal sheet.cpp" />
+    <ClCompile Include="Animal.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="NPC.h" />
-    <ClInclude Include="RPG.h" />
+    <ClInclude Include="Animal.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

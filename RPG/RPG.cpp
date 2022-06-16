@@ -21,18 +21,34 @@
 #include <vector>
 #include <Windows.h>
 #include <fstream>
+#include <algorithm>
 
 
 using namespace std;
 
+
+
 void saveFiles(int Dificulty, int health, int damage, int name, ofstream out, bool save_game) {
-	if (save_game == true) {
+	int A;
+	cout << "do you want to save? 1 = yes 2 = no\n";
+	cin >> A;
+	if (A == 1) {
 		out << Dificulty << ',' << health << ',' << damage << ',' << name << endl;
 	}
-
-	while (true) {
-
+}
+void getFiles(int &Dificulty, int &health, int &damage, int &name, ofstream out, bool save_game) {
+	string temp;
+	while (getline(out, temp, ',')) {
+		Dificulty = stio(temp);
+		getline(out, temp, ',');
+		health = stio(temp);
+		getline(out, temp, ',');
+		damage = stio(temp);
+		getline(out, temp, ',');
+		name = temp;
+		break; // just incase
 	}
+	cout << "pull complete\n";
 }
 
 
@@ -43,14 +59,45 @@ struct player {
 	string name;
 };
 
-int Attack(int &Dificulty, int &health, int &damage, int EnemyDamage, int Enemyhealth, string EnemyName) {
+
+class Npc
+{
+public:
+	int A;
+	void Purchase(int& Money, int& choice, int Item, int& health, int& damage);
+
+private:
+
+};
+void Npc::Purchase(int& Money, int& choice, int Item, int& health, int& damage) {
+	cout << "Weapons: \nPencil: Cost 20 | Damage 20\nPen: Cost 30 | Damage 25\nRubber Band Whip: Cost 35 | Damage 30\n";
+	cin >> choice;
+	if (choice == 1 && Money >= 20) {
+		damage = 20;
+		Money -= 20;
+	}
+	else if (choice == 2 && Money >= 30) {
+		damage = 25;
+		Money -= 30;
+	}
+	else if (choice == 3 && Money > 35) {
+		damage = 30;
+		Money -= 35;
+	}
+
+	cout << "\n Good choice I guess\n";
+}
+
+int Attack(int &Dificulty, int &health, int &damage, int EnemyDamage, int Enemyhealth, string EnemyName, int &Money) {
 	int choice;
 	ofstream out;
+
 	out.open("save.txt");
 	bool EnemyAlive = true;
 	while (EnemyAlive == true) {
 		if (health <= 0) {
 		 // end func
+
 			break;
 		}
 		if (Enemyhealth <= 0) {
@@ -58,6 +105,8 @@ int Attack(int &Dificulty, int &health, int &damage, int EnemyDamage, int Enemyh
 			printf("because you did so well i will be rewarding you with some tape to patch your self up.\n");
 			health += 20;
 			printf("Health: %d\n", health);
+			Money++;
+			cout << "Money: " << Money << endl;
 			break;
 		}
 		printf("How to you want to deal with the %s. 1 = dodge | 2 = hit | 3 = hard hitter (2x the damage 2x the pain) |\n", EnemyName);
@@ -109,14 +158,14 @@ int Attack(int &Dificulty, int &health, int &damage, int EnemyDamage, int Enemyh
 	return 0;
 }
 
-int bossRoom(int &Difficulty, int &health, int &damage, int EnemyDamage, int Enemyhealth, string EnemyName) {
+int bossRoom(int &Difficulty, int &health, int &damage, int EnemyDamage, int Enemyhealth, string EnemyName, int &Money) {
 	EnemyDamage = 35;
 	Enemyhealth = 150;
 	bool bossfight = true;
 	while (bossfight == true) {
 		printf("Now that you have defeated all of my enemys you will now have to face the boss.\n");
 		printf("the boss is one of Mr. Miyoshi's evil printing machines! The printer doesn't mess around, so be careful");
-		Attack(Difficulty, health, damage, EnemyDamage, Enemyhealth, EnemyName);
+		Attack(Difficulty, health, damage, EnemyDamage, Enemyhealth, EnemyName, Money);
 	}
 	return 0;
 }
@@ -124,6 +173,8 @@ int bossRoom(int &Difficulty, int &health, int &damage, int EnemyDamage, int Ene
 
 int main()
 {
+	int choice;
+	int Money = 0;
 	bool Call_Data = false;
 	bool save_game = false;
 	srand((unsigned)time(NULL));
@@ -146,11 +197,11 @@ int main()
 	EnemyNamev.push_back("mouse pad");
 	string EnemyName = "";
 	vector<string> Dialog;
-	Dialog.push_back("You're going to get shreded when I'm done with you! mwahha");
-	Dialog.push_back("oh nooo! our table, it's broken!");
-	Dialog.push_back("You should give up. NOW!");
-	Dialog.push_back("You're pretty much shreded paper at this point!");
-	Dialog.push_back("STOOOOP i coulda drop my croissant.");
+	Dialog.push_back("You're going to get shreded when I'm done with you! mwahha\n");
+	Dialog.push_back("oh nooo! our table, it's broken!\n");
+	Dialog.push_back("You should give up. NOW!\n");
+	Dialog.push_back("You're pretty much shreded paper at this point!\n");
+	Dialog.push_back("STOOOOP i coulda drop my croissant.\n");
 	//intro
 
 	/*printf("Hi! I'm Slater, the devoloper of this RPG\n");
@@ -180,25 +231,27 @@ int main()
 		   
 		   int roomChoice;
 		   int dificult = 0;
-		   
-		   printf("Do you want to start the game? 1 for yes||2 of no");
-		   cin >> roomChoice;
 			
 
-		   for (int i = 0; i <= 25; i++) {
+		   for (int i = 1; i <= 25; i++) {
 			   Enemyhealth = 10;
 			   Enemyhealth = Enemyhealth + (i * 2.5);
 			   EnemyDamage = EnemyDamage + (i * 1.5);
 			   cout << Dialog[rand() % Dialog.size()];
-			   Attack(Difficulty, player1.health, player1.damage, EnemyDamage, Enemyhealth, EnemyName);
 			   EnemyName = EnemyNamev[rand() % EnemyNamev.size()];
+			   Attack(Difficulty, player1.health, player1.damage, EnemyDamage, Enemyhealth, EnemyName ,Money);
+			   if (player1.health == 0) {
+				   quit = true;
+				   break;
+			   }
+
 			   if (i == 2) {
 				   player1.health += 10;
 				   printf("You gained ten hp! Health: %d", player1.health);
 				   system("ClS");
 			   }
 			   if (i == 10) {
-				   //Npc
+				  nPurchase(Money, choice, player1.health, player1.damage);
 
 			   }
 			   
@@ -207,7 +260,7 @@ int main()
 		   }
 			  if (Difficulty == 26) {
 				  EnemyName = "Evil Printer";
-				  bossRoom(Difficulty, player1.health, player1.damage, EnemyDamage, Enemyhealth, EnemyName);
+				  bossRoom(Difficulty, player1.health, player1.damage, EnemyDamage, Enemyhealth, EnemyName, Money);
 				  printf("ahh you beat my great masterpiece. this is so sad. Would you like to try again and maybe try to lose this time to boost my ego?| 1 = yes | 2 = no |\n");
 				  int restart = 0;
 				  cin >> restart;

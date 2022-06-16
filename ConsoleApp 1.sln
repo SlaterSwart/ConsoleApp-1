@@ -79,6 +79,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rectangels", "rectangels\re
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TrainglesGoalSheet", "TrainglesGoalSheet\TrainglesGoalSheet.vcxproj", "{FF642C34-D4B2-4591-B5EB-87D01D96F26F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Animal goal sheet", "Animal goal sheet\Animal goal sheet.vcxproj", "{DB356512-A65E-43D6-BC6E-20292B0925D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -391,6 +393,14 @@ Global
 		{FF642C34-D4B2-4591-B5EB-87D01D96F26F}.Release|x64.Build.0 = Release|x64
 		{FF642C34-D4B2-4591-B5EB-87D01D96F26F}.Release|x86.ActiveCfg = Release|Win32
 		{FF642C34-D4B2-4591-B5EB-87D01D96F26F}.Release|x86.Build.0 = Release|Win32
+		{DB356512-A65E-43D6-BC6E-20292B0925D6}.Debug|x64.ActiveCfg = Debug|x64
+		{DB356512-A65E-43D6-BC6E-20292B0925D6}.Debug|x64.Build.0 = Debug|x64
+		{DB356512-A65E-43D6-BC6E-20292B0925D6}.Debug|x86.ActiveCfg = Debug|Win32
+		{DB356512-A65E-43D6-BC6E-20292B0925D6}.Debug|x86.Build.0 = Debug|Win32
+		{DB356512-A65E-43D6-BC6E-20292B0925D6}.Release|x64.ActiveCfg = Release|x64
+		{DB356512-A65E-43D6-BC6E-20292B0925D6}.Release|x64.Build.0 = Release|x64
+		{DB356512-A65E-43D6-BC6E-20292B0925D6}.Release|x86.ActiveCfg = Release|Win32
+		{DB356512-A65E-43D6-BC6E-20292B0925D6}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
